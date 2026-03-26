@@ -1,0 +1,17 @@
+services:
+  oracle:
+    image: gvenzl/oracle-xe:21
+    container_name: oracle-xe-21
+    ports:
+      - "1521:1521"
+    environment:
+      - ORACLE_PASSWORD=${ORACLE_PASSWORD}
+      - APP_USER=${APP_USER}
+      - APP_USER_PASSWORD=${APP_USER_PASSWORD}
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+      - ./init.sql:/container-entrypoint-initdb.d/init.sql
+    restart: unless-stopped
+
+volumes:
+  oracle-data:
