@@ -1,16 +1,13 @@
-import random
-import csv
 from dataclasses import dataclass
-from datetime import date, timedelta
+from datetime import date
 from enum import Enum
 from .class_desc import ADV_DESC, INT_DESC, BEG_DESC, MIX_DESC, DIS_DESC, CHI_DESC
 
-random.seed(42)
 
 @dataclass
 class Multisport:
     id: int
-    customer: 'Customer'
+    customer_id: int
     discount_percent: int
     valid_until: date
     entries_left: int
@@ -18,9 +15,9 @@ class Multisport:
 @dataclass
 class Customer:
     id: int
-    swimming_school: 'SwimmingSchool'
-    name: str
-    surname: str
+    swimming_school_id: int
+    first_name: str
+    last_name: str
     email: str
     phone: str
     is_disabled: bool
@@ -40,9 +37,9 @@ class SwimmingSchool:
 @dataclass
 class Instructor:
     id: int
-    name: str
-    surname: str
-    swimming_school: SwimmingSchool
+    first_name: str
+    last_name: str
+    swimming_school_id: int
     phone_num: str
     employment_date: date
     salary: int
@@ -51,8 +48,8 @@ class Instructor:
 class Course:
     id: int
     description: str
-    swimming_school: SwimmingSchool
-    instructor: Instructor
+    swimming_school_id: int
+    instructor_id: int
     date_start: date
     date_end: date
     price: int
@@ -65,7 +62,7 @@ class Course:
 @dataclass
 class SwimmingPool:
     id: int
-    swimming_school: SwimmingSchool
+    swimming_school_id: int
     max_depth: int # cm
     min_depth: int # cm
     is_for_disabled: bool
@@ -116,8 +113,8 @@ class SwimmingClass:
         ClassType.CHI: ClassDescription.CHI
     }
 
-    course: Course
-    swimming_school: SwimmingSchool
-    instructor: Instructor
+    course_id: int
+    swimming_school_id: int
+    instructor_id: int
     description: str
     class_type: ClassType
