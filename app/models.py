@@ -3,7 +3,7 @@ import csv
 from dataclasses import dataclass
 from datetime import date, timedelta
 from enum import Enum
-from class_desc import ADV_DESC, INT_DESC, BEG_DESC, MIX_DESC, DIS_DESC, CHI_DESC
+from .class_desc import ADV_DESC, INT_DESC, BEG_DESC, MIX_DESC, DIS_DESC, CHI_DESC
 
 random.seed(42)
 
@@ -100,12 +100,12 @@ class SwimmingClass:
         MIX = 'MIX'
 
     class ClassDescription(Enum):
-        ADV = c.ADV_DESC
-        INT = c.INT_DESC
-        BEG = c.BEG_DESC
-        MIX = c.MIX_DESC
-        CHI = c.CHI_DESC
-        DIS = c.DIS_DESC
+        ADV = ADV_DESC
+        INT = INT_DESC
+        BEG = BEG_DESC
+        MIX = MIX_DESC
+        CHI = CHI_DESC
+        DIS = DIS_DESC
 
     class_map = {
         ClassType.ADV: ClassDescription.ADV,

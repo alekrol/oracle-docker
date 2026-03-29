@@ -1,0 +1,24 @@
+.
+├── README.md
+├── app
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-314.pyc
+│   │   ├── generations.cpython-314.pyc
+│   │   └── models.cpython-314.pyc
+│   ├── class_desc.py
+│   ├── generations.py
+│   └── models.py
+├── data-for-db-import
+├── db-diagram-more-info.png
+├── db-diagram.png
+├── docker-compose.yaml
+├── example-data
+│   ├── polish-first-names.txt
+│   ├── polish-surnames.txt
+│   ├── swimming-school-names.txt
+│   └── swimming-schools-descriptions.csv
+├── init.sql
+└── tree.txt
+
+5 directories, 17 files
