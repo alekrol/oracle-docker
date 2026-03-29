@@ -3,7 +3,7 @@ import csv
 from dataclasses import dataclass
 from datetime import date, timedelta
 from enum import Enum
-import class_desc as c
+from class_desc import ADV_DESC, INT_DESC, BEG_DESC, MIX_DESC, DIS_DESC, CHI_DESC
 
 random.seed(42)
 
@@ -115,7 +115,7 @@ class SwimmingClass:
         ClassType.DIS: ClassDescription.DIS,
         ClassType.CHI: ClassDescription.CHI
     }
-    
+
     course: Course
     swimming_school: SwimmingSchool
     instructor: Instructor
