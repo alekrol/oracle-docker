@@ -2,8 +2,9 @@ import csv
 import random
 import pandas as pd
 from pathlib import Path
-
+from dataclasses import fields
 from datetime import date, datetime
+
 from .models import (
     SwimmingClass,
     SwimmingPool,
@@ -26,12 +27,12 @@ from .generation_helpers import (
     generate_name_and_surname,
 )
 
-EXAMPLE_DATA_PATH = Path("example-data/")
+EXAMPLE_DATA_PATH = Path("data-dictionary/")
 DATA_FOR_DB_IMPORT_PATH = Path("data-for-db-import/")
 
 random.seed(42)
 
-def generate_swimming_school_data() -> int:
+def generate_swimming_school_data()-> None:
     header = "id name city capacity description built_date last_renovation_date".split()
 
     def swimming_school_to_row(s: SwimmingSchool) -> list[SwimmingSchool]:
@@ -84,7 +85,7 @@ def generate_swimming_school_data() -> int:
             writer.writerow(swimming_school_to_row(swimming_school))
             saved_schools += 1
 
-    return saved_schools
+    print(f'schools data saved: {saved_schools}') 
 
 def generate_customer_data(n=100000) -> None:
     def customer_to_row(c: Customer):
@@ -152,7 +153,7 @@ def generate_instructor_data(n=1000) -> None:
 
     swimming_school_infos = list(zip(df["id"], df["built_date"]))
 
-    with open(instructor_path, "w") as f:
+    with open(instructor_path, "w", newline='') as f:
         writer = csv.writer(f)
 
         csv_header = "id first_name last_name swimming_school_id phone_num empoyment_date salary".split()
@@ -180,6 +181,41 @@ def generate_instructor_data(n=1000) -> None:
 
     print(f"instructor data saved: {written_instructors}")
 
+def generate_multisport_data(ms_percent:int = 80)->None:
+    """
+    Generate multisport data for *ms_percent* of customers
+    """
+
+    customers_path = DATA_FOR_DB_IMPORT_PATH / 'customers.csv'
+    multisports_path = DATA_FOR_DB_IMPORT_PATH / 'multisports.csv'
+
+    if not customers_path.exists():
+        raise Exception("customers.csv file not found!")
+    
+    customer_ids = pd.read_csv(customers_path, usecols=['id'])['id'].to_list()
+    multisport_count = int(ms_percent*len(customer_ids)/100)
+    customer_with_multisport_ids = iter(random.sample(customer_ids, k=multisport_count)) # assume that 8/10 customers have a multisport card
+    multisports_saved = 0
+
+    with open(multisports_path, 'w', newline='') as f:
+        writer = csv.writer(f)
+        header = [f.name for f in fields(Multisport)]
+
+        writer.writerow(header)
+
+        for i in range(1, multisport_count+1):
+            multisport = Multisport(
+                id=i,
+                customer_id=next(customer_with_multisport_ids),
+                discount_percent=random.choice([20, 30, 40, 80, 100]),
+                valid_until=random_date(date(2026, 1, 1), date(2029, 1, 1)),
+                entries_left=random.choice([5, 10, 20, 30])
+            )
+
+            writer.writerow(multisport.field_values_to_list())
+            multisports_saved += 1
+
+        print(f'customers saved: {multisports_saved}')
 
 if __name__ == "__main__":
-    generate_instructor_data()
+    generate_multisport_data()

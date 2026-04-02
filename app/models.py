@@ -12,6 +12,9 @@ class Multisport:
     valid_until: date
     entries_left: int
 
+    def field_values_to_list(self):
+        return list(astuple(self))
+
 @dataclass
 class Customer:
     id: int
