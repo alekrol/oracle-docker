@@ -1,7 +1,9 @@
 import csv
 import random
+import pandas as pd
+from pathlib import Path
 
-from datetime import date, timedelta
+from datetime import date, datetime
 from .models import (
     SwimmingClass,
     SwimmingPool,
@@ -12,8 +14,20 @@ from .models import (
     Multisport,
 )
 
-EXAMPLE_DATA_PATH = "example-data/"
-DATA_FOR_DV_IMPORT_PATH = "data-for-db-import/"
+from .generation_helpers import (
+    MAILS,
+    DOMAINS,
+    PHONE_PREFIXES,
+    random_date,
+    serialize_str,
+    generate_birth_date,
+    generate_mail,
+    generate_number,
+    generate_name_and_surname,
+)
+
+EXAMPLE_DATA_PATH = Path("example-data/")
+DATA_FOR_DB_IMPORT_PATH = Path("data-for-db-import/")
 
 random.seed(42)
 
@@ -31,16 +45,12 @@ def generate_swimming_school_data() -> int:
             s.last_renovation_date,
         ]
 
-    def random_date(start: date, end: date) -> date:
-        delta = end - start
-        return start + timedelta(days=random.randint(0, delta.days))
-
     with open(EXAMPLE_DATA_PATH + "cities.csv", "r") as cities_file, open(
         EXAMPLE_DATA_PATH + "swimming-schools-descriptions.csv", "r"
     ) as descriptions_file, open(
         EXAMPLE_DATA_PATH + "swimming-school-names.csv", "r"
     ) as names_file, open(
-        DATA_FOR_DV_IMPORT_PATH + "swimming-schools.csv",
+        DATA_FOR_DB_IMPORT_PATH + "swimming-schools.csv",
         "w",
         newline="",
         encoding="utf-8",
@@ -76,31 +86,7 @@ def generate_swimming_school_data() -> int:
 
     return saved_schools
 
-
-def generate_customer_data(n=100000) -> int:
-    def generate_number() -> str:
-        return random.choice(PHONE_PREFIXES) + "".join(
-            [str(random.randint(0, 9)) for _ in range(9)]
-        )
-
-    def generate_mail(first_name: str, last_name: str) -> str:
-        return serialize_str(
-            first_name[:3].lower()
-            + "."
-            + last_name[:3].lower()
-            + str(random.randint(0, 1000))
-            + "@"
-            + random.choice(MAILS)
-            + "."
-            + random.choice(DOMAINS)
-        )
-
-    def generate_birth_date():
-        start = date(1950, 1, 1)
-        end = date(2020, 1, 1)
-
-        return start + timedelta(days=random.randint(0, (end - start).days))
-
+def generate_customer_data(n=100000) -> None:
     def customer_to_row(c: Customer):
         return [
             c.id,
@@ -114,35 +100,12 @@ def generate_customer_data(n=100000) -> int:
             c.is_active,
         ]
 
-    def serialize_str(s: str):
-        PL_TO_ASCII = {
-            "ą": "a",
-            "ć": "c",
-            "ę": "e",
-            "ł": "l",
-            "ń": "n",
-            "ó": "o",
-            "ś": "s",
-            "ź": "z",
-            "ż": "z",
-        }
-
-        return ''.join(PL_TO_ASCII.get(c, c) for c in s)
-
-    MAILS = "gmail o2 yahoo bing wp outlook company".split()
-    DOMAINS = "pl en com us gov eu de fr io".split()
-    PHONE_PREFIXES = "+48 +212 +12 +10 +42 +13 +65 +11".split()
-
-    with open(EXAMPLE_DATA_PATH + "first-names.csv", "r") as first_names_file, open(
-        EXAMPLE_DATA_PATH + "last-names.csv", "r"
-    ) as last_names_file, open(
-        DATA_FOR_DV_IMPORT_PATH + "swimming-schools.csv", "r"
+    with open(
+        DATA_FOR_DB_IMPORT_PATH + "swimming-schools.csv", "r"
     ) as swimming_schools_file, open(
-        DATA_FOR_DV_IMPORT_PATH + "customers.csv", "w", encoding="utf-8", newline=""
+        DATA_FOR_DB_IMPORT_PATH + "customers.csv", "w", encoding="utf-8", newline=""
     ) as customers_file:
 
-        first_names = [r["first_name"] for r in csv.DictReader(first_names_file)]
-        last_names = [r["last_name"] for r in csv.DictReader(last_names_file)]
         swimming_schools_ids = [r["id"] for r in csv.DictReader(swimming_schools_file)]
 
         customers_saved = 0
@@ -152,13 +115,12 @@ def generate_customer_data(n=100000) -> int:
             "id swimming_school_id first_name last_name email phone is_disabled birth_date is_active".split()
         )
 
-        for i in range(1, n+1):
-            first_name=random.choice(first_names)
-            last_name=random.choice(last_names)
+        for i in range(1, n + 1):
+            first_name, last_name = generate_name_and_surname()
 
             # correct polish last-name in case of a woman
-            if first_name[-1] == 'a' and last_name[-1] != 'a':
-                last_name = last_name[:-1] + 'a'
+            if first_name[-1] == "a" and last_name[-1] != "a":
+                last_name = last_name[:-1] + "a"
 
             customer = Customer(
                 id=i,
@@ -175,8 +137,49 @@ def generate_customer_data(n=100000) -> int:
             writer.writerow(customer_to_row(customer))
             customers_saved += 1
 
-    return customers_saved
+    print(f'customer data saved: {customers_saved}') 
+
+def generate_instructor_data(n=1000) -> None:
+    swimming_schools_path = DATA_FOR_DB_IMPORT_PATH / "swimming-schools.csv"
+    instructor_path = DATA_FOR_DB_IMPORT_PATH / "instructors.csv"
+
+    written_instructors = 0
+
+    if not swimming_schools_path.exists():
+        raise Exception("swimming-schools.csv file not found!")
+
+    df = pd.read_csv(swimming_schools_path, usecols=["id", "built_date"])
+
+    swimming_school_infos = list(zip(df["id"], df["built_date"]))
+
+    with open(instructor_path, "w") as f:
+        writer = csv.writer(f)
+
+        csv_header = "id first_name last_name swimming_school_id phone_num empoyment_date salary".split()
+        writer.writerow(csv_header)
+
+        for i in range(1, n + 1):
+            name, last_name = generate_name_and_surname()
+            swimming_school_id, swimming_school_built_date = random.choice(
+                swimming_school_infos
+            )
+            swimming_school_built_date = datetime.strptime(swimming_school_built_date, '%Y-%m-%d').date()
+
+            instructor = Instructor(
+                id=i,
+                first_name=name,
+                last_name=last_name,
+                swimming_school_id=swimming_school_id,
+                employment_date=random_date(swimming_school_built_date, date(2026, 1, 1)),
+                salary=random.randint(50, 100) * 100,
+                phone_num=generate_number(),
+            )
+
+            writer.writerow(instructor.field_values_to_list())
+            written_instructors += 1
+
+    print(f"instructor data saved: {written_instructors}")
 
 
 if __name__ == "__main__":
-    generate_customer_data()
+    generate_instructor_data()
