@@ -1,8 +1,6 @@
 from dataclasses import dataclass, astuple
 from datetime import date
 from enum import Enum
-from .class_desc import ADV_DESC, INT_DESC, BEG_DESC, MIX_DESC, DIS_DESC, CHI_DESC
-
 
 @dataclass
 class Multisport:
@@ -62,8 +60,11 @@ class Course:
     times_per_week: int
     max_num_of_participants: int
     num_of_classes: int
-    is_enrollable: bool
     is_multisport_accepted: bool
+    is_enrollable: bool | None = True # for now I dont know how to do it
+
+    def field_values_to_list(self):
+        return list(astuple(self))
 
 @dataclass
 class SwimmingPool:
@@ -94,33 +95,8 @@ class CoursePayment:
 
 @dataclass
 class SwimmingClass:
-    class ClassType(Enum):
-        ADV = 'ADVANCED'
-        BEG = 'BEGINNER'
-        INT = 'INTERMEDIATE'
-        DIS = 'DISABLED'
-        CHI = 'CHILDREN'
-        MIX = 'MIX'
-
-    class ClassDescription(Enum):
-        ADV = ADV_DESC
-        INT = INT_DESC
-        BEG = BEG_DESC
-        MIX = MIX_DESC
-        CHI = CHI_DESC
-        DIS = DIS_DESC
-
-    class_map = {
-        ClassType.ADV: ClassDescription.ADV,
-        ClassType.BEG: ClassDescription.BEG,
-        ClassType.INT: ClassDescription.INT,
-        ClassType.MIX: ClassDescription.MIX,
-        ClassType.DIS: ClassDescription.DIS,
-        ClassType.CHI: ClassDescription.CHI
-    }
-
     course_id: int
     swimming_school_id: int
     instructor_id: int
     description: str
-    class_type: ClassType
+    class_type: str
