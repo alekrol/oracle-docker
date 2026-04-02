@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, astuple
 from datetime import date
 from enum import Enum
 from .class_desc import ADV_DESC, INT_DESC, BEG_DESC, MIX_DESC, DIS_DESC, CHI_DESC
@@ -43,6 +43,9 @@ class Instructor:
     phone_num: str
     employment_date: date
     salary: int
+
+    def field_values_to_list(self):
+        return list(astuple(self))
 
 @dataclass
 class Course:
