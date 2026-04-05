@@ -78,16 +78,23 @@ class SwimmingPool:
     is_olympic: bool
     num_of_lanes: int
 
+    def field_values_to_list(self):
+        return list(astuple(self))
+
 @dataclass
 class CoursePayment:
     class Status(Enum):
         PAID = 'PAID'
         PENDING = 'PENDING'
         NOT_PAID = 'NOT_PAID'
-
+        FAILED = 'FAILED'
+        CANCELED = 'CANCELED'
+        REFUNDED = 'REFUNDED'
+        
+    STATUS_WEIGHTS = [3, 1, 1, 1, 1, 1]
     id: int
     customer: Customer
-    amount: int
+    amount_paid: int # price minus multisport discount
     created_at: date
     course: Course
     description: str
