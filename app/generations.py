@@ -1,6 +1,7 @@
 import csv
 import random
 import pandas as pd
+import numpy as np
 from pathlib import Path
 from dataclasses import fields
 from datetime import date, datetime, timedelta
@@ -31,6 +32,24 @@ from .generation_helpers import (
 DATA_DICTIONARY_PATH = Path("data-dictionary/")
 DATA_FOR_DB_IMPORT_PATH = Path("data-for-db-import/")
 
+# AI-generated dictionary data to base on
+path_course_descriptions = DATA_DICTIONARY_PATH / "course-descriptions.csv"
+path_swimming_school_descriptions = (
+    DATA_DICTIONARY_PATH / "swimming-schools-descriptions.csv"
+)
+path_swimming_school_names = DATA_DICTIONARY_PATH / "swimming-school-names.csv"
+path_cities = DATA_DICTIONARY_PATH / "cities.csv"
+
+# output files (also used as input for related tables)
+path_swimming_schools = DATA_FOR_DB_IMPORT_PATH / "swimming-schools.csv"
+path_instructors = DATA_FOR_DB_IMPORT_PATH / "instructors.csv"
+path_courses = DATA_FOR_DB_IMPORT_PATH / "courses.csv"
+path_customers = DATA_FOR_DB_IMPORT_PATH / "customers.csv"
+path_multisport = DATA_FOR_DB_IMPORT_PATH / "multisports.csv"
+path_instructors = DATA_FOR_DB_IMPORT_PATH / "instructors.csv"
+path_course_payments = DATA_FOR_DB_IMPORT_PATH / "course-payments.csv"
+path_swimming_pools = DATA_FOR_DB_IMPORT_PATH / 'swimming-pools.csv'
+
 random.seed(42)
 
 
@@ -48,12 +67,10 @@ def generate_swimming_school_data() -> None:
             s.last_renovation_date,
         ]
 
-    with open(EXAMPLE_DATA_PATH + "cities.csv", "r") as cities_file, open(
-        EXAMPLE_DATA_PATH + "swimming-schools-descriptions.csv", "r"
-    ) as descriptions_file, open(
-        EXAMPLE_DATA_PATH + "swimming-school-names.csv", "r"
-    ) as names_file, open(
-        DATA_FOR_DB_IMPORT_PATH + "swimming-schools.csv",
+    with open(path_cities, "r") as cities_file, open(
+        path_swimming_school_descriptions, "r"
+    ) as descriptions_file, open(path_swimming_school_names, "r") as names_file, open(
+        path_swimming_schools,
         "w",
         newline="",
         encoding="utf-8",
@@ -104,12 +121,9 @@ def generate_customer_data(n=100000) -> None:
             c.is_active,
         ]
 
-    with open(
-        DATA_FOR_DB_IMPORT_PATH + "swimming-schools.csv", "r"
-    ) as swimming_schools_file, open(
-        DATA_FOR_DB_IMPORT_PATH + "customers.csv", "w", encoding="utf-8", newline=""
+    with open(path_swimming_schools, "r") as swimming_schools_file, open(
+        path_customers, "w", encoding="utf-8", newline=""
     ) as customers_file:
-
         swimming_schools_ids = [r["id"] for r in csv.DictReader(swimming_schools_file)]
 
         customers_saved = 0
@@ -145,19 +159,16 @@ def generate_customer_data(n=100000) -> None:
 
 
 def generate_instructor_data(n=1000) -> None:
-    swimming_schools_path = DATA_FOR_DB_IMPORT_PATH / "swimming-schools.csv"
-    instructor_path = DATA_FOR_DB_IMPORT_PATH / "instructors.csv"
-
     written_instructors = 0
 
-    if not swimming_schools_path.exists():
+    if not path_swimming_schools.exists():
         raise Exception("swimming-schools.csv file not found!")
 
-    df = pd.read_csv(swimming_schools_path, usecols=["id", "built_date"])
+    df = pd.read_csv(path_swimming_schools, usecols=["id", "built_date"])
 
     swimming_school_infos = list(zip(df["id"], df["built_date"]))
 
-    with open(instructor_path, "w", newline="") as f:
+    with open(path_instructors, "w", newline="") as f:
         writer = csv.writer(f)
 
         csv_header = "id first_name last_name swimming_school_id phone_num empoyment_date salary".split()
@@ -195,20 +206,17 @@ def generate_multisport_data(ms_percent: int = 80) -> None:
     Generate multisport data for *ms_percent* of customers
     """
 
-    customers_path = DATA_FOR_DB_IMPORT_PATH / "customers.csv"
-    multisports_path = DATA_FOR_DB_IMPORT_PATH / "multisports.csv"
-
-    if not customers_path.exists():
+    if not path_customers.exists():
         raise Exception("customers.csv file not found!")
 
-    customer_ids = pd.read_csv(customers_path, usecols=["id"])["id"].to_list()
+    customer_ids = pd.read_csv(path_customers, usecols=["id"])["id"].to_list()
     multisport_count = int(ms_percent * len(customer_ids) / 100)
     customer_with_multisport_ids = iter(
         random.sample(customer_ids, k=multisport_count)
     )  # assume that 8/10 customers have a multisport card
     multisports_saved = 0
 
-    with open(multisports_path, "w", newline="") as f:
+    with open(path_multisport, "w", newline="") as f:
         writer = csv.writer(f)
         header = [f.name for f in fields(Multisport)]
 
@@ -230,11 +238,6 @@ def generate_multisport_data(ms_percent: int = 80) -> None:
 
 
 def generate_course_data() -> None:
-    path_swimming_schools = DATA_FOR_DB_IMPORT_PATH / "swimming-schools.csv"
-    path_course_descriptions = DATA_DICTIONARY_PATH / "course-descriptions.csv"
-    path_instructors = DATA_FOR_DB_IMPORT_PATH / "instructors.csv"
-    path_courses = DATA_FOR_DB_IMPORT_PATH / "courses.csv"
-
     for path in [path_swimming_schools, path_course_descriptions, path_instructors]:
         if not path.exists():
             raise Exception(f"{path.name} file not found!")
@@ -294,5 +297,94 @@ def generate_course_data() -> None:
     print(f"saved courses: {saved_courses}")
 
 
+def generate_course_payment_data(extra=100) -> None:
+    df_courses = pd.read_csv(
+        path_courses,
+        usecols=[
+            "id",
+            "price",
+            "is_multisport_accepted",
+            "date_start",
+            "max_num_of_participants",
+        ],
+    )
+
+    df_multisports = pd.read_csv(
+        path_multisport,
+        usecols=["id", "customer_id", "discount_percent", "valid_until"],
+    )
+
+    # to make it more real-life let's not make all courses full
+    participants_per_course = counts = df_courses[
+        "max_num_of_participants"
+    ] - np.random.randint(0, 4, size=len(df_courses))
+
+    # copy the 'id' column from the df_courses table to the output table
+    # depending on the number of participants
+    df_course_payments = pd.DataFrame()
+
+    df_course_payments["course_id"] = (
+        df_courses[["id"]]
+        .loc[df_courses.index.repeat(participants_per_course)]
+        .reset_index(drop=True)
+    )
+
+    df_course_payments["customer_id"] = df_multisports["customer_id"]
+    df_course_payments["status"] = random.choices(
+        [s.name for s in CoursePayment.Status],
+        weights=CoursePayment.STATUS_WEIGHTS,
+        k=len(df_course_payments),
+    )
+
+    df_course_payments['id'] = np.arange(1, len(df_course_payments)+1)
+
+    start = np.datetime64('2023-01-01')
+    end = np.datetime64('2023-12-31')
+
+    df_course_payments['created_at'] = start + (end - start) * np.random.rand(len(df_course_payments))
+    # TODO
+    df_course_payments['description'] = None
+    df_course_payments['amount_paid'] = None
+    return df_course_payments
+
+    # df_course_payments.to_csv(path_course_payments, sep=', ', index=False, encoding='utf-8')
+
+
+def generate_swimming_pool_data(n=10):
+    """
+    generate *n* pool instances per swimming school
+    """
+
+    swimming_school_ids = pd.read_csv(path_swimming_schools, usecols=['id'])['id']
+
+    with open(path_swimming_pools, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        header = [f.name for f in fields(SwimmingPool)]
+
+        writer.writerow(header)
+        saved_rows = 0
+
+        for i, school_id in enumerate(swimming_school_ids,start=1):
+            num_of_lanes=random.choice([4, 6, 8, 10, 12, 15])
+            max_capacity=num_of_lanes * 6
+
+            swimming_pool = SwimmingPool(
+                id=i,
+                swimming_school_id=school_id,
+                max_depth=random.choice([160+10*i for i in range(10)]),
+                min_depth=random.choice([100, 120, 140, 150]),
+                is_for_disabled=random.random() < 0.80,
+                num_of_lanes=num_of_lanes,
+                max_capacity=max_capacity,
+                is_olympic=random.choice([True, False]),
+                length=random.choice([25, 40, 50])
+            )
+
+            writer.writerow(swimming_pool.field_values_to_list())
+            saved_rows += 1
+    
+    return saved_rows
+
+
 if __name__ == "__main__":
-    generate_course_data()
+    print(generate_swimming_pool_data())
