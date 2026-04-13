@@ -1,4 +1,8 @@
-# USAGE python -m app.generations
+# To generate all the data at once use
+# python -m app.generations
+
+# To generate only one type of data (e.g. swimming pools)
+# in *app/generations.py* comment out all the unwanted types of data and run the same command as above
 
 ## based on the dictionary *data-dictionary/* creates all the necessary data: 
 

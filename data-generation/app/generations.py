@@ -457,11 +457,11 @@ def generate_swimming_class_data() -> None:
 
 
 if __name__ == "__main__":
-    # generate_swimming_school_data()
-    # generate_customer_data()
-    # generate_instructor_data()
-    # generate_multisport_data()
-    # generate_course_data()
-    # generate_course_payment_data()
-    # generate_swimming_pool_data()
+    generate_swimming_school_data()
+    generate_customer_data()
+    generate_instructor_data()
+    generate_multisport_data()
+    generate_course_data()
+    generate_course_payment_data()
+    generate_swimming_pool_data()
     generate_swimming_class_data()
