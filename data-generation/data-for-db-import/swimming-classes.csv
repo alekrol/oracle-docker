@@ -1,0 +1,329 @@
+id,course_id,swimming_school_id,instructor_id,description,class_type,price,num_of_max_participants,pool_id,duration,time_start,class_date
+1,1,30,3146,"Group swimming class for Advanced swimming course focused on long-term performance optimization, including stroke refinement and endurance development.",GR,100.0,16,294,45,2019-09-10 18:00:00,2019-09-10
+2,2,28,485,"Individual swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",IN,100.0,24,272,90,2020-09-18 08:00:00,2020-09-18
+3,2,28,485,"Group swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",GR,100.0,12,274,30,2020-08-26 08:00:00,2020-08-26
+4,2,28,485,"Individual swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",IN,100.0,24,277,45,2020-09-17 18:00:00,2020-09-17
+5,2,28,485,"Semi-private swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",SP,100.0,8,273,90,2020-09-13 12:00:00,2020-09-13
+6,2,28,485,"Private swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",PR,100.0,12,276,30,2020-09-03 10:00:00,2020-09-03
+7,2,28,485,"Group swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",GR,100.0,16,276,60,2020-09-07 08:00:00,2020-09-07
+8,2,28,485,"Group swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",GR,100.0,24,272,90,2020-09-18 14:00:00,2020-09-18
+9,2,28,485,"Group swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",GR,100.0,24,276,45,2020-09-12 12:00:00,2020-09-12
+10,2,28,485,"Group swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",GR,100.0,12,275,30,2020-08-27 18:00:00,2020-08-27
+11,2,28,485,"Individual swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",IN,100.0,20,275,90,2020-09-22 08:00:00,2020-09-22
+12,2,28,485,"Private swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",PR,100.0,16,274,60,2020-08-31 12:00:00,2020-08-31
+13,2,28,485,"Group swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",GR,100.0,12,279,45,2020-09-14 18:00:00,2020-09-14
+14,2,28,485,"Individual swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",IN,100.0,16,279,45,2020-09-09 14:00:00,2020-09-09
+15,2,28,485,"Private swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",PR,100.0,12,271,60,2020-09-21 08:00:00,2020-09-21
+16,2,28,485,"Semi-private swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",SP,100.0,12,280,60,2020-09-03 08:00:00,2020-09-03
+17,2,28,485,"Individual swimming class for Intermediate course designed to improve coordination, breathing control, and overall swimming efficiency.",IN,100.0,20,278,45,2020-09-15 14:00:00,2020-09-15
+18,3,41,142,"Private swimming class for Beginner course introducing essential water safety, floating, and basic swimming movements.",PR,100.0,24,409,60,2021-03-12 10:00:00,2021-03-12
+19,3,41,142,"Semi-private swimming class for Beginner course introducing essential water safety, floating, and basic swimming movements.",SP,100.0,16,404,45,2021-03-26 14:00:00,2021-03-26
+20,3,41,142,"Semi-private swimming class for Beginner course introducing essential water safety, floating, and basic swimming movements.",SP,100.0,8,403,45,2021-03-10 08:00:00,2021-03-10
+21,3,41,142,"Semi-private swimming class for Beginner course introducing essential water safety, floating, and basic swimming movements.",SP,100.0,20,407,90,2021-03-27 08:00:00,2021-03-27
+22,3,41,142,"Private swimming class for Beginner course introducing essential water safety, floating, and basic swimming movements.",PR,100.0,8,409,60,2021-03-25 08:00:00,2021-03-25
+23,3,41,142,"Private swimming class for Beginner course introducing essential water safety, floating, and basic swimming movements.",PR,100.0,20,403,90,2021-03-11 12:00:00,2021-03-11
+24,3,41,142,"Group swimming class for Beginner course introducing essential water safety, floating, and basic swimming movements.",GR,100.0,12,409,30,2021-03-16 16:00:00,2021-03-16
+25,3,41,142,"Private swimming class for Beginner course introducing essential water safety, floating, and basic swimming movements.",PR,100.0,24,404,45,2021-03-28 16:00:00,2021-03-28
+26,3,41,142,"Private swimming class for Beginner course introducing essential water safety, floating, and basic swimming movements.",PR,100.0,24,401,60,2021-03-13 16:00:00,2021-03-13
+27,4,29,627,Semi-private swimming class for Adaptive swimming course supporting mobility and confidence through personalized instruction.,SP,100.0,16,285,45,2013-09-10 08:00:00,2013-09-10
+28,4,29,627,Group swimming class for Adaptive swimming course supporting mobility and confidence through personalized instruction.,GR,100.0,8,282,90,2013-09-17 16:00:00,2013-09-17
+29,4,29,627,Group swimming class for Adaptive swimming course supporting mobility and confidence through personalized instruction.,GR,100.0,12,283,90,2013-10-04 16:00:00,2013-10-04
+30,4,29,627,Individual swimming class for Adaptive swimming course supporting mobility and confidence through personalized instruction.,IN,100.0,24,287,45,2013-09-18 16:00:00,2013-09-18
+31,5,36,3079,Individual swimming class for Mixed-level course offering structured development tailored to different skill levels.,IN,100.0,20,356,90,1997-12-24 12:00:00,1997-12-24
+32,5,36,3079,Semi-private swimming class for Mixed-level course offering structured development tailored to different skill levels.,SP,100.0,12,352,60,1997-12-05 10:00:00,1997-12-05
+33,5,36,3079,Group swimming class for Mixed-level course offering structured development tailored to different skill levels.,GR,100.0,12,360,45,1997-12-20 16:00:00,1997-12-20
+34,5,36,3079,Group swimming class for Mixed-level course offering structured development tailored to different skill levels.,GR,100.0,8,354,30,1997-12-04 18:00:00,1997-12-04
+35,6,26,4783,Group swimming class for Children’s course focused on building water confidence and fundamental swimming abilities.,GR,100.0,24,254,60,2004-11-13 08:00:00,2004-11-13
+36,6,26,4783,Semi-private swimming class for Children’s course focused on building water confidence and fundamental swimming abilities.,SP,100.0,12,260,90,2004-11-11 16:00:00,2004-11-11
+37,7,16,3710,"Individual swimming class for Senior swimming course promoting mobility, flexibility, and cardiovascular health.",IN,100.0,12,152,30,2021-09-12 14:00:00,2021-09-12
+38,7,16,3710,"Semi-private swimming class for Senior swimming course promoting mobility, flexibility, and cardiovascular health.",SP,100.0,20,158,30,2021-09-08 14:00:00,2021-09-08
+39,7,16,3710,"Group swimming class for Senior swimming course promoting mobility, flexibility, and cardiovascular health.",GR,100.0,16,152,45,2021-08-29 14:00:00,2021-08-29
+40,8,34,608,"Individual swimming class for Triathlon-focused course emphasizing endurance, pacing, and open-water techniques.",IN,100.0,20,333,90,2024-08-05 16:00:00,2024-08-05
+41,8,34,608,"Individual swimming class for Triathlon-focused course emphasizing endurance, pacing, and open-water techniques.",IN,100.0,12,332,90,2024-08-07 14:00:00,2024-08-07
+42,8,34,608,"Group swimming class for Triathlon-focused course emphasizing endurance, pacing, and open-water techniques.",GR,100.0,24,331,30,2024-07-31 18:00:00,2024-07-31
+43,8,34,608,"Individual swimming class for Triathlon-focused course emphasizing endurance, pacing, and open-water techniques.",IN,100.0,20,338,45,2024-08-04 14:00:00,2024-08-04
+44,8,34,608,"Semi-private swimming class for Triathlon-focused course emphasizing endurance, pacing, and open-water techniques.",SP,100.0,20,331,90,2024-07-31 10:00:00,2024-07-31
+45,8,34,608,"Private swimming class for Triathlon-focused course emphasizing endurance, pacing, and open-water techniques.",PR,100.0,20,339,90,2024-08-13 12:00:00,2024-08-13
+46,9,30,614,"Individual swimming class for Water fitness course aimed at improving strength, flexibility, and endurance.",IN,100.0,12,291,30,2020-07-27 12:00:00,2020-07-27
+47,9,30,614,"Private swimming class for Water fitness course aimed at improving strength, flexibility, and endurance.",PR,100.0,24,298,45,2020-07-22 08:00:00,2020-07-22
+48,9,30,614,"Group swimming class for Water fitness course aimed at improving strength, flexibility, and endurance.",GR,100.0,12,292,30,2020-08-06 08:00:00,2020-08-06
+49,9,30,614,"Individual swimming class for Water fitness course aimed at improving strength, flexibility, and endurance.",IN,100.0,24,294,30,2020-08-02 08:00:00,2020-08-02
+50,9,30,614,"Group swimming class for Water fitness course aimed at improving strength, flexibility, and endurance.",GR,100.0,24,300,60,2020-08-03 18:00:00,2020-08-03
+51,9,30,614,"Private swimming class for Water fitness course aimed at improving strength, flexibility, and endurance.",PR,100.0,16,294,60,2020-07-27 18:00:00,2020-07-27
+52,9,30,614,"Semi-private swimming class for Water fitness course aimed at improving strength, flexibility, and endurance.",SP,100.0,16,298,60,2020-07-25 18:00:00,2020-07-25
+53,9,30,614,"Group swimming class for Water fitness course aimed at improving strength, flexibility, and endurance.",GR,100.0,24,300,30,2020-07-21 14:00:00,2020-07-21
+54,9,30,614,"Group swimming class for Water fitness course aimed at improving strength, flexibility, and endurance.",GR,100.0,24,295,45,2020-08-07 10:00:00,2020-08-07
+55,9,30,614,"Private swimming class for Water fitness course aimed at improving strength, flexibility, and endurance.",PR,100.0,12,296,60,2020-08-18 08:00:00,2020-08-18
+56,9,30,614,"Individual swimming class for Water fitness course aimed at improving strength, flexibility, and endurance.",IN,100.0,16,300,30,2020-08-04 16:00:00,2020-08-04
+57,9,30,614,"Private swimming class for Water fitness course aimed at improving strength, flexibility, and endurance.",PR,100.0,12,295,30,2020-08-11 08:00:00,2020-08-11
+58,10,13,1217,Group swimming class for Individual swimming course tailored to personal goals and learning pace.,GR,100.0,16,125,45,2012-07-25 10:00:00,2012-07-25
+59,10,13,1217,Private swimming class for Individual swimming course tailored to personal goals and learning pace.,PR,100.0,16,129,90,2012-07-14 18:00:00,2012-07-14
+60,10,13,1217,Private swimming class for Individual swimming course tailored to personal goals and learning pace.,PR,100.0,20,125,30,2012-07-09 08:00:00,2012-07-09
+61,11,2,1806,"Group swimming class for Course focused on rescue techniques, prevention, and water safety awareness.",GR,100.0,16,13,90,2024-04-15 10:00:00,2024-04-15
+62,11,2,1806,"Semi-private swimming class for Course focused on rescue techniques, prevention, and water safety awareness.",SP,100.0,8,12,45,2024-04-22 08:00:00,2024-04-22
+63,11,2,1806,"Group swimming class for Course focused on rescue techniques, prevention, and water safety awareness.",GR,100.0,24,13,90,2024-04-16 16:00:00,2024-04-16
+64,11,2,1806,"Individual swimming class for Course focused on rescue techniques, prevention, and water safety awareness.",IN,100.0,16,11,60,2024-04-06 12:00:00,2024-04-06
+65,11,2,1806,"Individual swimming class for Course focused on rescue techniques, prevention, and water safety awareness.",IN,100.0,8,16,90,2024-04-26 10:00:00,2024-04-26
+66,11,2,1806,"Individual swimming class for Course focused on rescue techniques, prevention, and water safety awareness.",IN,100.0,12,17,30,2024-04-12 10:00:00,2024-04-12
+67,11,2,1806,"Individual swimming class for Course focused on rescue techniques, prevention, and water safety awareness.",IN,100.0,12,15,45,2024-04-15 14:00:00,2024-04-15
+68,11,2,1806,"Group swimming class for Course focused on rescue techniques, prevention, and water safety awareness.",GR,100.0,20,14,45,2024-04-17 08:00:00,2024-04-17
+69,11,2,1806,"Semi-private swimming class for Course focused on rescue techniques, prevention, and water safety awareness.",SP,100.0,12,14,30,2024-04-16 12:00:00,2024-04-16
+70,11,2,1806,"Individual swimming class for Course focused on rescue techniques, prevention, and water safety awareness.",IN,100.0,16,12,60,2024-04-17 12:00:00,2024-04-17
+71,11,2,1806,"Private swimming class for Course focused on rescue techniques, prevention, and water safety awareness.",PR,100.0,20,19,60,2024-04-25 16:00:00,2024-04-25
+72,11,2,1806,"Group swimming class for Course focused on rescue techniques, prevention, and water safety awareness.",GR,100.0,12,20,60,2024-04-08 12:00:00,2024-04-08
+73,12,43,1687,Group swimming class for Course preparing participants for safe swimming in natural environments.,GR,100.0,20,426,60,2010-09-19 16:00:00,2010-09-19
+74,12,43,1687,Semi-private swimming class for Course preparing participants for safe swimming in natural environments.,SP,100.0,8,427,45,2010-10-05 16:00:00,2010-10-05
+75,12,43,1687,Private swimming class for Course preparing participants for safe swimming in natural environments.,PR,100.0,20,421,45,2010-09-17 18:00:00,2010-09-17
+76,12,43,1687,Private swimming class for Course preparing participants for safe swimming in natural environments.,PR,100.0,16,430,60,2010-09-29 08:00:00,2010-09-29
+77,12,43,1687,Group swimming class for Course preparing participants for safe swimming in natural environments.,GR,100.0,24,425,90,2010-10-09 12:00:00,2010-10-09
+78,12,43,1687,Private swimming class for Course preparing participants for safe swimming in natural environments.,PR,100.0,16,429,45,2010-09-28 18:00:00,2010-09-28
+79,12,43,1687,Individual swimming class for Course preparing participants for safe swimming in natural environments.,IN,100.0,20,423,60,2010-09-29 18:00:00,2010-09-29
+80,12,43,1687,Semi-private swimming class for Course preparing participants for safe swimming in natural environments.,SP,100.0,16,425,45,2010-10-03 08:00:00,2010-10-03
+81,13,32,4118,Semi-private swimming class for Course designed for relaxed swimming and maintaining general fitness.,SP,100.0,24,316,90,2014-04-11 16:00:00,2014-04-11
+82,13,32,4118,Semi-private swimming class for Course designed for relaxed swimming and maintaining general fitness.,SP,100.0,12,319,90,2014-04-06 18:00:00,2014-04-06
+83,14,34,3910,Individual swimming class for Course focused on preparing swimmers for competitions and performance tracking.,IN,100.0,16,339,60,2022-05-04 08:00:00,2022-05-04
+84,14,34,3910,Group swimming class for Course focused on preparing swimmers for competitions and performance tracking.,GR,100.0,16,334,45,2022-04-20 18:00:00,2022-04-20
+85,14,34,3910,Individual swimming class for Course focused on preparing swimmers for competitions and performance tracking.,IN,100.0,12,338,30,2022-04-13 08:00:00,2022-04-13
+86,14,34,3910,Semi-private swimming class for Course focused on preparing swimmers for competitions and performance tracking.,SP,100.0,24,334,90,2022-04-26 18:00:00,2022-04-26
+87,14,34,3910,Semi-private swimming class for Course focused on preparing swimmers for competitions and performance tracking.,SP,100.0,12,331,30,2022-04-25 10:00:00,2022-04-25
+88,14,34,3910,Semi-private swimming class for Course focused on preparing swimmers for competitions and performance tracking.,SP,100.0,24,338,30,2022-04-20 10:00:00,2022-04-20
+89,14,34,3910,Individual swimming class for Course focused on preparing swimmers for competitions and performance tracking.,IN,100.0,12,338,60,2022-04-16 14:00:00,2022-04-16
+90,14,34,3910,Semi-private swimming class for Course focused on preparing swimmers for competitions and performance tracking.,SP,100.0,24,337,90,2022-05-02 18:00:00,2022-05-02
+91,14,34,3910,Individual swimming class for Course focused on preparing swimmers for competitions and performance tracking.,IN,100.0,16,334,60,2022-04-28 14:00:00,2022-04-28
+92,14,34,3910,Semi-private swimming class for Course focused on preparing swimmers for competitions and performance tracking.,SP,100.0,16,338,30,2022-05-03 10:00:00,2022-05-03
+93,14,34,3910,Private swimming class for Course focused on preparing swimmers for competitions and performance tracking.,PR,100.0,16,336,30,2022-04-20 12:00:00,2022-04-20
+94,14,34,3910,Individual swimming class for Course focused on preparing swimmers for competitions and performance tracking.,IN,100.0,20,333,45,2022-04-17 10:00:00,2022-04-17
+95,15,11,435,Group swimming class for Course dedicated to refining stroke mechanics and movement efficiency.,GR,100.0,16,109,90,2008-02-25 14:00:00,2008-02-25
+96,15,11,435,Semi-private swimming class for Course dedicated to refining stroke mechanics and movement efficiency.,SP,100.0,20,107,30,2008-02-13 10:00:00,2008-02-13
+97,15,11,435,Semi-private swimming class for Course dedicated to refining stroke mechanics and movement efficiency.,SP,100.0,16,105,90,2008-02-27 08:00:00,2008-02-27
+98,15,11,435,Semi-private swimming class for Course dedicated to refining stroke mechanics and movement efficiency.,SP,100.0,24,110,45,2008-02-29 18:00:00,2008-02-29
+99,15,11,435,Semi-private swimming class for Course dedicated to refining stroke mechanics and movement efficiency.,SP,100.0,20,108,30,2008-02-19 12:00:00,2008-02-19
+100,15,11,435,Semi-private swimming class for Course dedicated to refining stroke mechanics and movement efficiency.,SP,100.0,20,103,90,2008-02-22 18:00:00,2008-02-22
+101,15,11,435,Individual swimming class for Course dedicated to refining stroke mechanics and movement efficiency.,IN,100.0,8,107,30,2008-03-02 16:00:00,2008-03-02
+102,15,11,435,Group swimming class for Course dedicated to refining stroke mechanics and movement efficiency.,GR,100.0,12,108,45,2008-03-03 14:00:00,2008-03-03
+103,16,32,3387,Group swimming class for Course aimed at increasing stamina and long-distance swimming capacity.,GR,100.0,16,314,90,2022-01-10 14:00:00,2022-01-10
+104,16,32,3387,Private swimming class for Course aimed at increasing stamina and long-distance swimming capacity.,PR,100.0,16,317,60,2022-01-12 14:00:00,2022-01-12
+105,16,32,3387,Group swimming class for Course aimed at increasing stamina and long-distance swimming capacity.,GR,100.0,24,311,60,2022-01-17 08:00:00,2022-01-17
+106,16,32,3387,Individual swimming class for Course aimed at increasing stamina and long-distance swimming capacity.,IN,100.0,8,311,45,2022-01-22 08:00:00,2022-01-22
+107,16,32,3387,Individual swimming class for Course aimed at increasing stamina and long-distance swimming capacity.,IN,100.0,12,314,45,2022-01-02 16:00:00,2022-01-02
+108,16,32,3387,Semi-private swimming class for Course aimed at increasing stamina and long-distance swimming capacity.,SP,100.0,24,314,90,2022-01-23 08:00:00,2022-01-23
+109,16,32,3387,Private swimming class for Course aimed at increasing stamina and long-distance swimming capacity.,PR,100.0,24,320,30,2022-01-13 10:00:00,2022-01-13
+110,16,32,3387,Individual swimming class for Course aimed at increasing stamina and long-distance swimming capacity.,IN,100.0,24,311,60,2022-01-11 08:00:00,2022-01-11
+111,16,32,3387,Semi-private swimming class for Course aimed at increasing stamina and long-distance swimming capacity.,SP,100.0,12,312,45,2022-01-14 18:00:00,2022-01-14
+112,17,16,205,"Group swimming class for Course focused on speed, explosive starts, and short-distance performance.",GR,100.0,24,152,30,2019-05-02 12:00:00,2019-05-02
+113,17,16,205,"Private swimming class for Course focused on speed, explosive starts, and short-distance performance.",PR,100.0,16,152,60,2019-04-27 14:00:00,2019-04-27
+114,17,16,205,"Group swimming class for Course focused on speed, explosive starts, and short-distance performance.",GR,100.0,20,152,90,2019-05-07 14:00:00,2019-05-07
+115,17,16,205,"Private swimming class for Course focused on speed, explosive starts, and short-distance performance.",PR,100.0,12,157,45,2019-04-30 14:00:00,2019-04-30
+116,17,16,205,"Private swimming class for Course focused on speed, explosive starts, and short-distance performance.",PR,100.0,20,158,90,2019-04-29 16:00:00,2019-04-29
+117,17,16,205,"Private swimming class for Course focused on speed, explosive starts, and short-distance performance.",PR,100.0,8,155,90,2019-04-20 10:00:00,2019-04-20
+118,17,16,205,"Individual swimming class for Course focused on speed, explosive starts, and short-distance performance.",IN,100.0,24,160,90,2019-05-04 14:00:00,2019-05-04
+119,17,16,205,"Private swimming class for Course focused on speed, explosive starts, and short-distance performance.",PR,100.0,16,153,90,2019-04-10 14:00:00,2019-04-10
+120,17,16,205,"Individual swimming class for Course focused on speed, explosive starts, and short-distance performance.",IN,100.0,16,155,60,2019-04-21 12:00:00,2019-04-21
+121,17,16,205,"Group swimming class for Course focused on speed, explosive starts, and short-distance performance.",GR,100.0,8,154,90,2019-04-26 10:00:00,2019-04-26
+122,17,16,205,"Semi-private swimming class for Course focused on speed, explosive starts, and short-distance performance.",SP,100.0,20,158,90,2019-04-27 10:00:00,2019-04-27
+123,17,16,205,"Group swimming class for Course focused on speed, explosive starts, and short-distance performance.",GR,100.0,12,157,45,2019-04-12 12:00:00,2019-04-12
+124,17,16,205,"Private swimming class for Course focused on speed, explosive starts, and short-distance performance.",PR,100.0,16,158,60,2019-05-01 16:00:00,2019-05-01
+125,17,16,205,"Semi-private swimming class for Course focused on speed, explosive starts, and short-distance performance.",SP,100.0,16,156,90,2019-05-03 16:00:00,2019-05-03
+126,17,16,205,"Private swimming class for Course focused on speed, explosive starts, and short-distance performance.",PR,100.0,12,152,45,2019-04-19 12:00:00,2019-04-19
+127,17,16,205,"Private swimming class for Course focused on speed, explosive starts, and short-distance performance.",PR,100.0,24,153,45,2019-04-13 18:00:00,2019-04-13
+128,18,23,2486,Individual swimming class for Course designed for families to learn and practice swimming together.,IN,100.0,16,230,60,2020-12-20 14:00:00,2020-12-20
+129,18,23,2486,Group swimming class for Course designed for families to learn and practice swimming together.,GR,100.0,16,224,60,2020-12-22 10:00:00,2020-12-22
+130,18,23,2486,Individual swimming class for Course designed for families to learn and practice swimming together.,IN,100.0,24,223,60,2020-12-13 08:00:00,2020-12-13
+131,18,23,2486,Group swimming class for Course designed for families to learn and practice swimming together.,GR,100.0,16,223,90,2020-12-09 16:00:00,2020-12-09
+132,18,23,2486,Group swimming class for Course designed for families to learn and practice swimming together.,GR,100.0,24,225,90,2020-12-22 08:00:00,2020-12-22
+133,18,23,2486,Semi-private swimming class for Course designed for families to learn and practice swimming together.,SP,100.0,12,221,60,2020-12-16 12:00:00,2020-12-16
+134,19,11,3802,Semi-private swimming class for Course supporting rehabilitation and recovery through aquatic exercises.,SP,100.0,20,108,30,2022-12-20 08:00:00,2022-12-20
+135,19,11,3802,Group swimming class for Course supporting rehabilitation and recovery through aquatic exercises.,GR,100.0,24,105,30,2022-12-21 10:00:00,2022-12-21
+136,20,45,3464,Individual swimming class for Advanced-level course focusing on precision and efficiency in swimming techniques.,IN,100.0,20,450,45,2022-10-15 16:00:00,2022-10-15
+137,21,35,1509,"Semi-private swimming class for Intermediate program enhancing rhythm, coordination, and breathing patterns.",SP,100.0,16,350,90,2008-02-10 14:00:00,2008-02-10
+138,21,35,1509,"Private swimming class for Intermediate program enhancing rhythm, coordination, and breathing patterns.",PR,100.0,8,344,45,2008-02-03 16:00:00,2008-02-03
+139,22,19,3187,Private swimming class for Introductory course focused on building confidence and comfort in water.,PR,100.0,12,184,45,2009-06-03 08:00:00,2009-06-03
+140,22,19,3187,Group swimming class for Introductory course focused on building confidence and comfort in water.,GR,100.0,20,188,90,2009-05-18 08:00:00,2009-05-18
+141,22,19,3187,Private swimming class for Introductory course focused on building confidence and comfort in water.,PR,100.0,16,185,90,2009-05-14 10:00:00,2009-05-14
+142,22,19,3187,Group swimming class for Introductory course focused on building confidence and comfort in water.,GR,100.0,16,190,45,2009-06-03 10:00:00,2009-06-03
+143,22,19,3187,Semi-private swimming class for Introductory course focused on building confidence and comfort in water.,SP,100.0,12,183,60,2009-05-16 16:00:00,2009-05-16
+144,22,19,3187,Individual swimming class for Introductory course focused on building confidence and comfort in water.,IN,100.0,12,185,60,2009-05-15 08:00:00,2009-05-15
+145,22,19,3187,Semi-private swimming class for Introductory course focused on building confidence and comfort in water.,SP,100.0,16,187,60,2009-05-16 14:00:00,2009-05-16
+146,22,19,3187,Semi-private swimming class for Introductory course focused on building confidence and comfort in water.,SP,100.0,24,181,90,2009-05-27 08:00:00,2009-05-27
+147,22,19,3187,Private swimming class for Introductory course focused on building confidence and comfort in water.,PR,100.0,8,182,45,2009-06-01 12:00:00,2009-06-01
+148,22,19,3187,Group swimming class for Introductory course focused on building confidence and comfort in water.,GR,100.0,16,190,30,2009-06-06 18:00:00,2009-06-06
+149,22,19,3187,Individual swimming class for Introductory course focused on building confidence and comfort in water.,IN,100.0,20,185,45,2009-05-28 16:00:00,2009-05-28
+150,22,19,3187,Semi-private swimming class for Introductory course focused on building confidence and comfort in water.,SP,100.0,8,188,60,2009-06-02 14:00:00,2009-06-02
+151,22,19,3187,Semi-private swimming class for Introductory course focused on building confidence and comfort in water.,SP,100.0,8,183,60,2009-05-23 12:00:00,2009-05-23
+152,22,19,3187,Semi-private swimming class for Introductory course focused on building confidence and comfort in water.,SP,100.0,16,187,30,2009-06-04 14:00:00,2009-06-04
+153,22,19,3187,Semi-private swimming class for Introductory course focused on building confidence and comfort in water.,SP,100.0,16,186,30,2009-05-15 12:00:00,2009-05-15
+154,22,19,3187,Semi-private swimming class for Introductory course focused on building confidence and comfort in water.,SP,100.0,8,189,90,2009-06-09 16:00:00,2009-06-09
+155,23,44,4250,Semi-private swimming class for Inclusive course tailored to individual abilities and progression needs.,SP,100.0,24,436,90,2019-06-17 10:00:00,2019-06-17
+156,23,44,4250,Semi-private swimming class for Inclusive course tailored to individual abilities and progression needs.,SP,100.0,16,439,45,2019-06-17 10:00:00,2019-06-17
+157,23,44,4250,Private swimming class for Inclusive course tailored to individual abilities and progression needs.,PR,100.0,20,432,30,2019-06-24 18:00:00,2019-06-24
+158,24,48,4821,Individual swimming class for Course offering flexible progression for diverse skill levels in one group.,IN,100.0,24,471,90,2019-04-15 12:00:00,2019-04-15
+159,24,48,4821,Group swimming class for Course offering flexible progression for diverse skill levels in one group.,GR,100.0,20,472,45,2019-04-17 08:00:00,2019-04-17
+160,24,48,4821,Semi-private swimming class for Course offering flexible progression for diverse skill levels in one group.,SP,100.0,16,477,90,2019-04-19 16:00:00,2019-04-19
+161,24,48,4821,Semi-private swimming class for Course offering flexible progression for diverse skill levels in one group.,SP,100.0,24,473,90,2019-04-17 14:00:00,2019-04-17
+162,24,48,4821,Individual swimming class for Course offering flexible progression for diverse skill levels in one group.,IN,100.0,12,472,60,2019-04-29 16:00:00,2019-04-29
+163,24,48,4821,Semi-private swimming class for Course offering flexible progression for diverse skill levels in one group.,SP,100.0,16,471,60,2019-04-20 16:00:00,2019-04-20
+164,25,8,3151,Private swimming class for Children’s program focused on gradual skill improvement and safety.,PR,100.0,24,78,45,2018-01-13 16:00:00,2018-01-13
+165,25,8,3151,Semi-private swimming class for Children’s program focused on gradual skill improvement and safety.,SP,100.0,16,76,90,2018-01-08 14:00:00,2018-01-08
+166,25,8,3151,Semi-private swimming class for Children’s program focused on gradual skill improvement and safety.,SP,100.0,12,74,90,2018-01-14 12:00:00,2018-01-14
+167,25,8,3151,Individual swimming class for Children’s program focused on gradual skill improvement and safety.,IN,100.0,8,76,90,2018-01-13 14:00:00,2018-01-13
+168,26,18,3496,Semi-private swimming class for Course designed to maintain activity levels and overall health in seniors.,SP,100.0,12,178,30,2014-05-24 18:00:00,2014-05-24
+169,26,18,3496,Individual swimming class for Course designed to maintain activity levels and overall health in seniors.,IN,100.0,16,172,90,2014-05-28 16:00:00,2014-05-28
+170,26,18,3496,Group swimming class for Course designed to maintain activity levels and overall health in seniors.,GR,100.0,8,173,90,2014-05-28 14:00:00,2014-05-28
+171,27,49,285,Individual swimming class for Course aimed at improving stamina and race preparation for triathletes.,IN,100.0,16,486,90,2025-01-01 14:00:00,2025-01-01
+172,27,49,285,Group swimming class for Course aimed at improving stamina and race preparation for triathletes.,GR,100.0,24,487,60,2025-01-05 18:00:00,2025-01-05
+173,28,12,4738,Semi-private swimming class for Fitness course focused on resistance training and muscle development in water.,SP,100.0,8,120,30,2020-03-28 16:00:00,2020-03-28
+174,28,12,4738,Individual swimming class for Fitness course focused on resistance training and muscle development in water.,IN,100.0,16,114,30,2020-03-21 18:00:00,2020-03-21
+175,28,12,4738,Semi-private swimming class for Fitness course focused on resistance training and muscle development in water.,SP,100.0,8,118,45,2020-03-04 18:00:00,2020-03-04
+176,28,12,4738,Private swimming class for Fitness course focused on resistance training and muscle development in water.,PR,100.0,8,116,30,2020-03-29 08:00:00,2020-03-29
+177,28,12,4738,Private swimming class for Fitness course focused on resistance training and muscle development in water.,PR,100.0,20,113,45,2020-03-12 12:00:00,2020-03-12
+178,28,12,4738,Semi-private swimming class for Fitness course focused on resistance training and muscle development in water.,SP,100.0,12,113,45,2020-03-19 18:00:00,2020-03-19
+179,28,12,4738,Group swimming class for Fitness course focused on resistance training and muscle development in water.,GR,100.0,24,114,90,2020-03-20 14:00:00,2020-03-20
+180,28,12,4738,Individual swimming class for Fitness course focused on resistance training and muscle development in water.,IN,100.0,16,118,60,2020-03-08 14:00:00,2020-03-08
+181,29,16,3080,Group swimming class for One-on-one training program designed for rapid skill improvement.,GR,100.0,16,159,45,2012-01-25 14:00:00,2012-01-25
+182,29,16,3080,Group swimming class for One-on-one training program designed for rapid skill improvement.,GR,100.0,24,155,90,2012-01-18 12:00:00,2012-01-18
+183,30,48,3704,Private swimming class for Course covering practical rescue scenarios and emergency response techniques.,PR,100.0,12,477,90,2022-08-19 12:00:00,2022-08-19
+184,30,48,3704,Group swimming class for Course covering practical rescue scenarios and emergency response techniques.,GR,100.0,24,476,60,2022-08-15 14:00:00,2022-08-15
+185,30,48,3704,Private swimming class for Course covering practical rescue scenarios and emergency response techniques.,PR,100.0,20,475,30,2022-08-12 18:00:00,2022-08-12
+186,31,10,2196,Group swimming class for Course building confidence and adaptability in outdoor swimming conditions.,GR,100.0,20,95,45,2023-07-25 16:00:00,2023-07-25
+187,31,10,2196,Private swimming class for Course building confidence and adaptability in outdoor swimming conditions.,PR,100.0,12,100,60,2023-07-14 18:00:00,2023-07-14
+188,31,10,2196,Individual swimming class for Course building confidence and adaptability in outdoor swimming conditions.,IN,100.0,8,95,90,2023-07-21 08:00:00,2023-07-21
+189,31,10,2196,Group swimming class for Course building confidence and adaptability in outdoor swimming conditions.,GR,100.0,12,92,60,2023-07-20 12:00:00,2023-07-20
+190,31,10,2196,Private swimming class for Course building confidence and adaptability in outdoor swimming conditions.,PR,100.0,12,94,45,2023-07-22 14:00:00,2023-07-22
+191,31,10,2196,Private swimming class for Course building confidence and adaptability in outdoor swimming conditions.,PR,100.0,16,93,60,2023-07-19 16:00:00,2023-07-19
+192,32,18,3593,"Semi-private swimming class for Course focused on enjoyment, relaxation, and light physical activity.",SP,100.0,16,172,90,2023-02-12 18:00:00,2023-02-12
+193,32,18,3593,"Group swimming class for Course focused on enjoyment, relaxation, and light physical activity.",GR,100.0,20,179,60,2023-02-07 10:00:00,2023-02-07
+194,32,18,3593,"Group swimming class for Course focused on enjoyment, relaxation, and light physical activity.",GR,100.0,16,179,30,2023-02-15 08:00:00,2023-02-15
+195,33,23,2445,Semi-private swimming class for Structured training program preparing swimmers for competitive events.,SP,100.0,16,230,90,2021-07-18 18:00:00,2021-07-18
+196,33,23,2445,Private swimming class for Structured training program preparing swimmers for competitive events.,PR,100.0,12,228,30,2021-07-14 18:00:00,2021-07-14
+197,33,23,2445,Private swimming class for Structured training program preparing swimmers for competitive events.,PR,100.0,12,222,90,2021-07-27 16:00:00,2021-07-27
+198,33,23,2445,Private swimming class for Structured training program preparing swimmers for competitive events.,PR,100.0,8,223,30,2021-07-23 14:00:00,2021-07-23
+199,33,23,2445,Group swimming class for Structured training program preparing swimmers for competitive events.,GR,100.0,8,222,45,2021-07-17 14:00:00,2021-07-17
+200,33,23,2445,Individual swimming class for Structured training program preparing swimmers for competitive events.,IN,100.0,16,229,90,2021-07-19 14:00:00,2021-07-19
+201,33,23,2445,Individual swimming class for Structured training program preparing swimmers for competitive events.,IN,100.0,8,228,90,2021-07-27 14:00:00,2021-07-27
+202,33,23,2445,Private swimming class for Structured training program preparing swimmers for competitive events.,PR,100.0,16,224,90,2021-07-13 18:00:00,2021-07-13
+203,34,47,23,Semi-private swimming class for Course focusing on detailed improvement of all swimming strokes.,SP,100.0,8,466,60,1996-09-10 12:00:00,1996-09-10
+204,34,47,23,Group swimming class for Course focusing on detailed improvement of all swimming strokes.,GR,100.0,12,462,90,1996-09-15 12:00:00,1996-09-15
+205,34,47,23,Group swimming class for Course focusing on detailed improvement of all swimming strokes.,GR,100.0,24,461,30,1996-09-24 10:00:00,1996-09-24
+206,34,47,23,Private swimming class for Course focusing on detailed improvement of all swimming strokes.,PR,100.0,24,464,30,1996-09-10 10:00:00,1996-09-10
+207,34,47,23,Individual swimming class for Course focusing on detailed improvement of all swimming strokes.,IN,100.0,12,466,45,1996-09-21 10:00:00,1996-09-21
+208,34,47,23,Group swimming class for Course focusing on detailed improvement of all swimming strokes.,GR,100.0,12,469,60,1996-09-11 10:00:00,1996-09-11
+209,34,47,23,Individual swimming class for Course focusing on detailed improvement of all swimming strokes.,IN,100.0,8,463,30,1996-09-06 18:00:00,1996-09-06
+210,34,47,23,Private swimming class for Course focusing on detailed improvement of all swimming strokes.,PR,100.0,24,466,30,1996-09-28 10:00:00,1996-09-28
+211,34,47,23,Individual swimming class for Course focusing on detailed improvement of all swimming strokes.,IN,100.0,12,467,30,1996-09-11 08:00:00,1996-09-11
+212,34,47,23,Group swimming class for Course focusing on detailed improvement of all swimming strokes.,GR,100.0,16,469,30,1996-09-18 14:00:00,1996-09-18
+213,34,47,23,Semi-private swimming class for Course focusing on detailed improvement of all swimming strokes.,SP,100.0,24,461,60,1996-09-19 10:00:00,1996-09-19
+214,34,47,23,Semi-private swimming class for Course focusing on detailed improvement of all swimming strokes.,SP,100.0,8,468,90,1996-09-23 08:00:00,1996-09-23
+215,34,47,23,Semi-private swimming class for Course focusing on detailed improvement of all swimming strokes.,SP,100.0,20,468,30,1996-09-24 08:00:00,1996-09-24
+216,34,47,23,Group swimming class for Course focusing on detailed improvement of all swimming strokes.,GR,100.0,12,462,45,1996-09-13 16:00:00,1996-09-13
+217,34,47,23,Private swimming class for Course focusing on detailed improvement of all swimming strokes.,PR,100.0,24,469,60,1996-09-22 18:00:00,1996-09-22
+218,34,47,23,Semi-private swimming class for Course focusing on detailed improvement of all swimming strokes.,SP,100.0,16,468,90,1996-09-22 16:00:00,1996-09-22
+219,35,31,4486,Group swimming class for Course designed to enhance long-distance swimming capabilities.,GR,100.0,24,304,90,2024-05-05 18:00:00,2024-05-05
+220,36,22,4700,Semi-private swimming class for Course aimed at improving sprint performance and reaction time.,SP,100.0,20,216,90,2016-11-10 10:00:00,2016-11-10
+221,36,22,4700,Semi-private swimming class for Course aimed at improving sprint performance and reaction time.,SP,100.0,8,216,90,2016-10-26 18:00:00,2016-10-26
+222,36,22,4700,Private swimming class for Course aimed at improving sprint performance and reaction time.,PR,100.0,16,213,90,2016-11-03 12:00:00,2016-11-03
+223,36,22,4700,Group swimming class for Course aimed at improving sprint performance and reaction time.,GR,100.0,8,217,30,2016-10-15 08:00:00,2016-10-15
+224,36,22,4700,Private swimming class for Course aimed at improving sprint performance and reaction time.,PR,100.0,24,211,60,2016-11-07 10:00:00,2016-11-07
+225,36,22,4700,Group swimming class for Course aimed at improving sprint performance and reaction time.,GR,100.0,20,211,60,2016-10-26 12:00:00,2016-10-26
+226,36,22,4700,Private swimming class for Course aimed at improving sprint performance and reaction time.,PR,100.0,24,219,45,2016-10-24 08:00:00,2016-10-24
+227,36,22,4700,Individual swimming class for Course aimed at improving sprint performance and reaction time.,IN,100.0,12,212,60,2016-11-03 14:00:00,2016-11-03
+228,37,16,4811,Private swimming class for Course encouraging family participation in safe aquatic exercises.,PR,100.0,24,154,90,2009-06-04 12:00:00,2009-06-04
+229,37,16,4811,Group swimming class for Course encouraging family participation in safe aquatic exercises.,GR,100.0,16,151,45,2009-06-20 18:00:00,2009-06-20
+230,37,16,4811,Private swimming class for Course encouraging family participation in safe aquatic exercises.,PR,100.0,16,156,30,2009-06-23 12:00:00,2009-06-23
+231,37,16,4811,Individual swimming class for Course encouraging family participation in safe aquatic exercises.,IN,100.0,24,157,30,2009-06-28 10:00:00,2009-06-28
+232,38,33,463,Individual swimming class for Course supporting physical recovery and therapeutic movement in water.,IN,100.0,8,322,45,2021-09-23 18:00:00,2021-09-23
+233,38,33,463,Semi-private swimming class for Course supporting physical recovery and therapeutic movement in water.,SP,100.0,16,323,60,2021-09-13 14:00:00,2021-09-13
+234,38,33,463,Private swimming class for Course supporting physical recovery and therapeutic movement in water.,PR,100.0,24,330,30,2021-09-23 12:00:00,2021-09-23
+235,38,33,463,Group swimming class for Course supporting physical recovery and therapeutic movement in water.,GR,100.0,24,321,30,2021-09-04 10:00:00,2021-09-04
+236,38,33,463,Private swimming class for Course supporting physical recovery and therapeutic movement in water.,PR,100.0,20,328,90,2021-09-14 18:00:00,2021-09-14
+237,38,33,463,Semi-private swimming class for Course supporting physical recovery and therapeutic movement in water.,SP,100.0,24,322,60,2021-09-08 10:00:00,2021-09-08
+238,38,33,463,Semi-private swimming class for Course supporting physical recovery and therapeutic movement in water.,SP,100.0,24,328,60,2021-09-03 12:00:00,2021-09-03
+239,38,33,463,Group swimming class for Course supporting physical recovery and therapeutic movement in water.,GR,100.0,24,321,30,2021-09-07 14:00:00,2021-09-07
+240,38,33,463,Individual swimming class for Course supporting physical recovery and therapeutic movement in water.,IN,100.0,12,325,60,2021-09-09 10:00:00,2021-09-09
+241,38,33,463,Private swimming class for Course supporting physical recovery and therapeutic movement in water.,PR,100.0,20,327,45,2021-09-03 08:00:00,2021-09-03
+242,38,33,463,Individual swimming class for Course supporting physical recovery and therapeutic movement in water.,IN,100.0,12,329,60,2021-09-12 16:00:00,2021-09-12
+243,38,33,463,Group swimming class for Course supporting physical recovery and therapeutic movement in water.,GR,100.0,8,327,30,2021-09-12 18:00:00,2021-09-12
+244,39,1,432,Semi-private swimming class for High-level course designed for experienced swimmers seeking peak performance.,SP,100.0,16,10,90,2024-01-21 08:00:00,2024-01-21
+245,39,1,432,Semi-private swimming class for High-level course designed for experienced swimmers seeking peak performance.,SP,100.0,20,5,30,2024-01-18 18:00:00,2024-01-18
+246,40,11,1415,Semi-private swimming class for Course bridging intermediate and advanced skills with structured progression.,SP,100.0,12,110,90,2012-02-28 12:00:00,2012-02-28
+247,40,11,1415,Private swimming class for Course bridging intermediate and advanced skills with structured progression.,PR,100.0,8,104,90,2012-02-29 14:00:00,2012-02-29
+248,40,11,1415,Semi-private swimming class for Course bridging intermediate and advanced skills with structured progression.,SP,100.0,16,106,45,2012-02-29 14:00:00,2012-02-29
+249,41,43,1525,Private swimming class for Entry-level course introducing fundamental swimming concepts step by step.,PR,100.0,24,422,45,2009-12-29 08:00:00,2009-12-29
+250,41,43,1525,Private swimming class for Entry-level course introducing fundamental swimming concepts step by step.,PR,100.0,12,424,30,2010-01-01 18:00:00,2010-01-01
+251,42,32,4818,Individual swimming class for Course focused on accessibility and individualized support in aquatic environments.,IN,100.0,12,320,45,2015-10-22 10:00:00,2015-10-22
+252,42,32,4818,Group swimming class for Course focused on accessibility and individualized support in aquatic environments.,GR,100.0,20,318,90,2015-10-19 18:00:00,2015-10-19
+253,42,32,4818,Private swimming class for Course focused on accessibility and individualized support in aquatic environments.,PR,100.0,16,313,90,2015-11-10 18:00:00,2015-11-10
+254,42,32,4818,Group swimming class for Course focused on accessibility and individualized support in aquatic environments.,GR,100.0,16,315,30,2015-10-29 14:00:00,2015-10-29
+255,42,32,4818,Private swimming class for Course focused on accessibility and individualized support in aquatic environments.,PR,100.0,16,318,90,2015-10-30 08:00:00,2015-10-30
+256,42,32,4818,Group swimming class for Course focused on accessibility and individualized support in aquatic environments.,GR,100.0,16,312,30,2015-10-15 12:00:00,2015-10-15
+257,42,32,4818,Semi-private swimming class for Course focused on accessibility and individualized support in aquatic environments.,SP,100.0,24,311,90,2015-10-28 16:00:00,2015-10-28
+258,42,32,4818,Individual swimming class for Course focused on accessibility and individualized support in aquatic environments.,IN,100.0,20,319,45,2015-10-24 16:00:00,2015-10-24
+259,42,32,4818,Group swimming class for Course focused on accessibility and individualized support in aquatic environments.,GR,100.0,16,312,45,2015-10-28 08:00:00,2015-10-28
+260,42,32,4818,Group swimming class for Course focused on accessibility and individualized support in aquatic environments.,GR,100.0,20,318,45,2015-10-21 18:00:00,2015-10-21
+261,42,32,4818,Private swimming class for Course focused on accessibility and individualized support in aquatic environments.,PR,100.0,20,317,60,2015-10-25 12:00:00,2015-10-25
+262,42,32,4818,Group swimming class for Course focused on accessibility and individualized support in aquatic environments.,GR,100.0,16,312,60,2015-11-08 18:00:00,2015-11-08
+263,43,36,4327,Group swimming class for Group course designed for participants with varied experience levels.,GR,100.0,16,360,45,2017-12-20 12:00:00,2017-12-20
+264,43,36,4327,Private swimming class for Group course designed for participants with varied experience levels.,PR,100.0,12,356,60,2017-12-15 16:00:00,2017-12-15
+265,43,36,4327,Semi-private swimming class for Group course designed for participants with varied experience levels.,SP,100.0,8,355,90,2017-12-16 16:00:00,2017-12-16
+266,43,36,4327,Private swimming class for Group course designed for participants with varied experience levels.,PR,100.0,24,352,90,2017-12-16 18:00:00,2017-12-16
+267,44,13,3267,Private swimming class for Children’s development program focused on technique and confidence.,PR,100.0,16,123,45,2014-11-27 12:00:00,2014-11-27
+268,44,13,3267,Private swimming class for Children’s development program focused on technique and confidence.,PR,100.0,12,123,45,2014-12-12 10:00:00,2014-12-12
+269,44,13,3267,Group swimming class for Children’s development program focused on technique and confidence.,GR,100.0,24,129,30,2014-12-06 08:00:00,2014-12-06
+270,44,13,3267,Private swimming class for Children’s development program focused on technique and confidence.,PR,100.0,24,127,45,2014-12-16 10:00:00,2014-12-16
+271,44,13,3267,Individual swimming class for Children’s development program focused on technique and confidence.,IN,100.0,24,123,90,2014-12-02 18:00:00,2014-12-02
+272,44,13,3267,Group swimming class for Children’s development program focused on technique and confidence.,GR,100.0,12,128,60,2014-12-10 12:00:00,2014-12-10
+273,44,13,3267,Semi-private swimming class for Children’s development program focused on technique and confidence.,SP,100.0,12,125,90,2014-12-04 16:00:00,2014-12-04
+274,44,13,3267,Individual swimming class for Children’s development program focused on technique and confidence.,IN,100.0,24,128,90,2014-12-08 18:00:00,2014-12-08
+275,44,13,3267,Private swimming class for Children’s development program focused on technique and confidence.,PR,100.0,24,127,45,2014-12-09 16:00:00,2014-12-09
+276,45,36,3006,Individual swimming class for Course aimed at improving balance and coordination in seniors.,IN,100.0,16,351,90,2015-07-21 10:00:00,2015-07-21
+277,45,36,3006,Private swimming class for Course aimed at improving balance and coordination in seniors.,PR,100.0,24,352,60,2015-07-19 08:00:00,2015-07-19
+278,45,36,3006,Group swimming class for Course aimed at improving balance and coordination in seniors.,GR,100.0,20,359,45,2015-07-07 12:00:00,2015-07-07
+279,45,36,3006,Semi-private swimming class for Course aimed at improving balance and coordination in seniors.,SP,100.0,20,356,30,2015-07-04 10:00:00,2015-07-04
+280,45,36,3006,Semi-private swimming class for Course aimed at improving balance and coordination in seniors.,SP,100.0,24,356,45,2015-07-03 14:00:00,2015-07-03
+281,45,36,3006,Semi-private swimming class for Course aimed at improving balance and coordination in seniors.,SP,100.0,12,351,60,2015-07-04 12:00:00,2015-07-04
+282,45,36,3006,Group swimming class for Course aimed at improving balance and coordination in seniors.,GR,100.0,12,353,30,2015-07-22 12:00:00,2015-07-22
+283,45,36,3006,Private swimming class for Course aimed at improving balance and coordination in seniors.,PR,100.0,12,358,90,2015-07-17 18:00:00,2015-07-17
+284,45,36,3006,Group swimming class for Course aimed at improving balance and coordination in seniors.,GR,100.0,16,354,45,2015-07-04 08:00:00,2015-07-04
+285,45,36,3006,Semi-private swimming class for Course aimed at improving balance and coordination in seniors.,SP,100.0,12,355,30,2015-07-05 12:00:00,2015-07-05
+286,45,36,3006,Group swimming class for Course aimed at improving balance and coordination in seniors.,GR,100.0,24,358,30,2015-07-09 14:00:00,2015-07-09
+287,45,36,3006,Group swimming class for Course aimed at improving balance and coordination in seniors.,GR,100.0,24,351,45,2015-07-17 16:00:00,2015-07-17
+288,46,2,10,Individual swimming class for Course focused on refining freestyle technique for triathlon performance.,IN,100.0,8,20,60,2024-04-25 14:00:00,2024-04-25
+289,47,4,2111,Individual swimming class for Course combining conditioning exercises and swimming drills.,IN,100.0,8,39,60,2017-10-31 10:00:00,2017-10-31
+290,47,4,2111,Group swimming class for Course combining conditioning exercises and swimming drills.,GR,100.0,20,31,90,2017-10-25 14:00:00,2017-10-25
+291,48,9,917,Private swimming class for Advanced one-on-one coaching focused on performance optimization.,PR,100.0,8,86,30,2006-05-08 18:00:00,2006-05-08
+292,48,9,917,Private swimming class for Advanced one-on-one coaching focused on performance optimization.,PR,100.0,8,90,60,2006-05-07 18:00:00,2006-05-07
+293,48,9,917,Individual swimming class for Advanced one-on-one coaching focused on performance optimization.,IN,100.0,24,86,45,2006-05-01 12:00:00,2006-05-01
+294,48,9,917,Semi-private swimming class for Advanced one-on-one coaching focused on performance optimization.,SP,100.0,12,83,30,2006-05-22 14:00:00,2006-05-22
+295,48,9,917,Semi-private swimming class for Advanced one-on-one coaching focused on performance optimization.,SP,100.0,12,81,45,2006-05-01 12:00:00,2006-05-01
+296,48,9,917,Group swimming class for Advanced one-on-one coaching focused on performance optimization.,GR,100.0,24,87,90,2006-05-10 12:00:00,2006-05-10
+297,48,9,917,Private swimming class for Advanced one-on-one coaching focused on performance optimization.,PR,100.0,12,85,60,2006-05-01 18:00:00,2006-05-01
+298,48,9,917,Group swimming class for Advanced one-on-one coaching focused on performance optimization.,GR,100.0,16,85,30,2006-05-27 18:00:00,2006-05-27
+299,48,9,917,Private swimming class for Advanced one-on-one coaching focused on performance optimization.,PR,100.0,20,87,60,2006-05-13 14:00:00,2006-05-13
+300,48,9,917,Individual swimming class for Advanced one-on-one coaching focused on performance optimization.,IN,100.0,20,86,60,2006-05-15 18:00:00,2006-05-15
+301,48,9,917,Group swimming class for Advanced one-on-one coaching focused on performance optimization.,GR,100.0,8,87,45,2006-05-23 14:00:00,2006-05-23
+302,48,9,917,Private swimming class for Advanced one-on-one coaching focused on performance optimization.,PR,100.0,8,86,60,2006-05-10 08:00:00,2006-05-10
+303,48,9,917,Private swimming class for Advanced one-on-one coaching focused on performance optimization.,PR,100.0,20,83,90,2006-05-14 16:00:00,2006-05-14
+304,48,9,917,Private swimming class for Advanced one-on-one coaching focused on performance optimization.,PR,100.0,16,90,90,2006-05-14 08:00:00,2006-05-14
+305,48,9,917,Private swimming class for Advanced one-on-one coaching focused on performance optimization.,PR,100.0,8,87,60,2006-05-20 08:00:00,2006-05-20
+306,48,9,917,Individual swimming class for Advanced one-on-one coaching focused on performance optimization.,IN,100.0,24,88,30,2006-04-30 10:00:00,2006-04-30
+307,49,6,207,Individual swimming class for Comprehensive course covering water safety and preventive techniques.,IN,100.0,16,56,90,2024-09-02 10:00:00,2024-09-02
+308,49,6,207,Group swimming class for Comprehensive course covering water safety and preventive techniques.,GR,100.0,20,56,60,2024-09-10 10:00:00,2024-09-10
+309,49,6,207,Semi-private swimming class for Comprehensive course covering water safety and preventive techniques.,SP,100.0,24,53,60,2024-09-13 08:00:00,2024-09-13
+310,49,6,207,Semi-private swimming class for Comprehensive course covering water safety and preventive techniques.,SP,100.0,16,54,30,2024-09-06 18:00:00,2024-09-06
+311,49,6,207,Group swimming class for Comprehensive course covering water safety and preventive techniques.,GR,100.0,20,59,90,2024-09-12 10:00:00,2024-09-12
+312,49,6,207,Group swimming class for Comprehensive course covering water safety and preventive techniques.,GR,100.0,20,54,60,2024-09-05 12:00:00,2024-09-05
+313,50,46,1980,Semi-private swimming class for Advanced course focusing on navigation and endurance in natural water settings.,SP,100.0,12,452,90,2019-02-17 08:00:00,2019-02-17
+314,50,46,1980,Individual swimming class for Advanced course focusing on navigation and endurance in natural water settings.,IN,100.0,20,452,60,2019-03-11 18:00:00,2019-03-11
+315,50,46,1980,Private swimming class for Advanced course focusing on navigation and endurance in natural water settings.,PR,100.0,24,459,60,2019-03-05 08:00:00,2019-03-05
+316,50,46,1980,Private swimming class for Advanced course focusing on navigation and endurance in natural water settings.,PR,100.0,12,456,45,2019-03-10 10:00:00,2019-03-10
+317,50,46,1980,Group swimming class for Advanced course focusing on navigation and endurance in natural water settings.,GR,100.0,12,458,30,2019-02-17 10:00:00,2019-02-17
+318,50,46,1980,Private swimming class for Advanced course focusing on navigation and endurance in natural water settings.,PR,100.0,16,458,45,2019-02-28 16:00:00,2019-02-28
+319,50,46,1980,Group swimming class for Advanced course focusing on navigation and endurance in natural water settings.,GR,100.0,20,458,90,2019-02-13 12:00:00,2019-02-13
+320,50,46,1980,Semi-private swimming class for Advanced course focusing on navigation and endurance in natural water settings.,SP,100.0,8,453,60,2019-03-09 16:00:00,2019-03-09
+321,50,46,1980,Group swimming class for Advanced course focusing on navigation and endurance in natural water settings.,GR,100.0,24,456,45,2019-02-25 14:00:00,2019-02-25
+322,50,46,1980,Individual swimming class for Advanced course focusing on navigation and endurance in natural water settings.,IN,100.0,20,459,30,2019-03-07 10:00:00,2019-03-07
+323,50,46,1980,Group swimming class for Advanced course focusing on navigation and endurance in natural water settings.,GR,100.0,16,453,45,2019-02-27 10:00:00,2019-02-27
+324,50,46,1980,Private swimming class for Advanced course focusing on navigation and endurance in natural water settings.,PR,100.0,16,459,60,2019-03-05 10:00:00,2019-03-05
+325,50,46,1980,Group swimming class for Advanced course focusing on navigation and endurance in natural water settings.,GR,100.0,24,455,45,2019-02-19 10:00:00,2019-02-19
+326,50,46,1980,Private swimming class for Advanced course focusing on navigation and endurance in natural water settings.,PR,100.0,8,459,45,2019-03-02 16:00:00,2019-03-02
+327,50,46,1980,Individual swimming class for Advanced course focusing on navigation and endurance in natural water settings.,IN,100.0,24,460,60,2019-02-16 18:00:00,2019-02-16
+328,50,46,1980,Group swimming class for Advanced course focusing on navigation and endurance in natural water settings.,GR,100.0,8,451,60,2019-03-09 08:00:00,2019-03-09

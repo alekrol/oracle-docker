@@ -1,5 +1,5 @@
 from dataclasses import dataclass, astuple
-from datetime import date
+from datetime import date, datetime
 from enum import Enum
 
 @dataclass
@@ -119,17 +119,31 @@ class ClassType(Enum):
 
 @dataclass
 class SwimmingClass:
+    id: int
     course_id: int
     swimming_school_id: int
     instructor_id: int
     description: str
     class_type: ClassType
+    price: float
+    num_of_max_participants: int
+    pool_id: int
+    duration: int
+    time_start: datetime
+    class_date: date
 
     def field_values_to_list(self):
         return [
+            self.id,
             self.course_id,
             self.swimming_school_id,
             self.instructor_id,
             self.description,
             self.class_type.code,
+            self.price,
+            self.num_of_max_participants,
+            self.pool_id,
+            self.duration,
+            self.time_start.isoformat(sep=" "),
+            self.class_date.isoformat(),
         ]

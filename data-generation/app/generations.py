@@ -426,8 +426,16 @@ def generate_swimming_class_data() -> None:
 
     df_courses = pd.read_csv(
         paths.courses,
-        usecols=["id", "description", "swimming_school_id", "instructor_id", "num_of_classes"],
+        usecols=["id", "description", "swimming_school_id", "instructor_id", "num_of_classes", "price", "date_start", "date_end"],
+        parse_dates=["date_start", "date_end"],
     )
+
+    pool_ids_by_school: dict[int, list[int]] = {}
+    if paths.swimming_pools.exists():
+        with open(paths.swimming_pools, "r", encoding="utf-8", newline="") as pool_file:
+            for row in csv.DictReader(pool_file):
+                school_id = int(row["swimming_school_id"])
+                pool_ids_by_school.setdefault(school_id, []).append(int(row["id"]))
 
     saved_classes = 0
 
@@ -439,16 +447,37 @@ def generate_swimming_class_data() -> None:
         class_types = list(ClassType)
 
         for _, course in df_courses.iterrows():
+            course_school_id = int(course["swimming_school_id"])
+            pool_options = pool_ids_by_school.get(course_school_id, [])
+            if not pool_options:
+                raise Exception(
+                    f"No swimming pools found for swimming school {course_school_id}. "
+                    "Run swimming pool generation before swimming class generation."
+                )
+
             for _ in range(course["num_of_classes"]):
                 class_type = random.choice(class_types)
                 description = f"{class_type.label} swimming class for {course['description']}"
+                class_price = round(float(course["price"]) / max(int(course["num_of_classes"]), 1), 2)
+                class_date = random_date(course["date_start"].date(), course["date_end"].date())
+                time_start = datetime.combine(
+                    class_date,
+                    random.choice([datetime.min.time().replace(hour=h) for h in [8, 10, 12, 14, 16, 18]])
+                )
 
                 swimming_class = SwimmingClass(
+                    id=saved_classes + 1,
                     course_id=int(course["id"]),
-                    swimming_school_id=int(course["swimming_school_id"]),
+                    swimming_school_id=course_school_id,
                     instructor_id=int(course["instructor_id"]),
                     description=description,
                     class_type=class_type,
+                    price=class_price,
+                    num_of_max_participants=random.choice([8, 12, 16, 20, 24]),
+                    pool_id=random.choice(pool_options),
+                    duration=random.choice([30, 45, 60, 90]),
+                    time_start=time_start,
+                    class_date=class_date,
                 )
 
                 writer.writerow(swimming_class.field_values_to_list())
@@ -458,11 +487,11 @@ def generate_swimming_class_data() -> None:
 
 
 if __name__ == "__main__":
-    generate_swimming_school_data()
-    generate_customer_data()
-    generate_instructor_data()
-    generate_multisport_data()
-    generate_course_data()
-    generate_course_payment_data()
-    generate_swimming_pool_data()
+    # generate_swimming_school_data()
+    # generate_customer_data()
+    # generate_instructor_data()
+    # generate_multisport_data()
+    # generate_course_data()
+    # generate_course_payment_data()
+    # generate_swimming_pool_data()
     generate_swimming_class_data()
