@@ -89,7 +89,7 @@ CREATE TABLE swimming_class (
     swimming_school_id NUMBER NOT NULL,
     instructor_id NUMBER NOT NULL,
     description VARCHAR2(4000),
-    class_type CHAR(2),
+    class_type CHAR(2) CHECK (class_type IN ('GR', 'IN', 'PR', 'SP')),
     price NUMBER(10, 2),
     num_of_max_participants NUMBER,
     pool_id NUMBER NOT NULL,

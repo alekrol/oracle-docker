@@ -100,13 +100,36 @@ class CoursePayment:
     description: str
     status: Status
 
+class ClassType(Enum):
+    GROUP = ("GR", "Group")
+    INDIVIDUAL = ("IN", "Individual")
+    PRIVATE = ("PR", "Private")
+    SEMI_PRIVATE = ("SP", "Semi-private")
+
+    @property
+    def code(self) -> str:
+        return self.value[0]
+
+    @property
+    def label(self) -> str:
+        return self.value[1]
+
+    def __str__(self) -> str:
+        return self.code
+
 @dataclass
 class SwimmingClass:
     course_id: int
     swimming_school_id: int
     instructor_id: int
     description: str
-    class_type: str
+    class_type: ClassType
 
     def field_values_to_list(self):
-        return list(astuple(self))
+        return [
+            self.course_id,
+            self.swimming_school_id,
+            self.instructor_id,
+            self.description,
+            self.class_type.code,
+        ]

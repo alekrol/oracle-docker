@@ -14,6 +14,7 @@ from .models import (
     Customer,
     Multisport,
     Course,
+    ClassType,
 )
 
 from . import paths
@@ -435,12 +436,12 @@ def generate_swimming_class_data() -> None:
         header = [f.name for f in fields(SwimmingClass)]
         writer.writerow(header)
 
-        class_types = ["Group", "Individual", "Private", "Semi-private"]
+        class_types = list(ClassType)
 
         for _, course in df_courses.iterrows():
             for _ in range(course["num_of_classes"]):
                 class_type = random.choice(class_types)
-                description = f"{class_type} swimming class for {course['description']}"
+                description = f"{class_type.label} swimming class for {course['description']}"
 
                 swimming_class = SwimmingClass(
                     course_id=int(course["id"]),
