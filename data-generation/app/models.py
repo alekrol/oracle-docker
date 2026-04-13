@@ -60,8 +60,8 @@ class Course:
     times_per_week: int
     max_num_of_participants: int
     num_of_classes: int
-    is_multisport_accepted: bool
-    is_enrollable: bool | None = True # for now I dont know how to do it
+    is_multisport_accepted: int
+    is_enrollable: int | None = 1 # for now I dont know how to do it
 
     def field_values_to_list(self):
         return list(astuple(self))

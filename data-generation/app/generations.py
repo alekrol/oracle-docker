@@ -127,8 +127,8 @@ def generate_customer_data(n: int = 300000) -> None:
                 email=generate_mail(first_name, last_name),
                 phone=generate_number(),
                 birth_date=generate_birth_date(),
-                is_disabled=random.random() < 0.01,  # 1/100 is disabled
-                is_active=random.random() < 0.85,
+                is_disabled=int(random.random() < 0.01),  # 1/100 is disabled
+                is_active=int(random.random() < 0.85),
             )
 
             writer.writerow(customer_to_row(customer))
@@ -266,7 +266,7 @@ def generate_course_data() -> None:
                 num_of_classes=num_of_classes,
                 price=num_of_classes * 100,
                 max_num_of_participants=random.choice([10, 15, 20]),
-                is_multisport_accepted=random.random() > 0.05,
+                is_multisport_accepted=int(random.random() > 0.05),
                 date_start=date_start,
                 date_end=date_end,
             )
@@ -365,7 +365,7 @@ def generate_course_payment_data() -> None:
         df_course_payments["price"]
         * (1 - df_course_payments["discount_percent"] / 100),
         df_course_payments["price"],
-    )
+    ).round(2)
 
     df_course_payments = df_course_payments[
         [
@@ -406,10 +406,10 @@ def generate_swimming_pool_data(n: int =10)->None:
                     swimming_school_id=school_id,
                     max_depth=random.choice([160 + 10 * i for i in range(10)]),
                     min_depth=random.choice([100, 120, 140, 150]),
-                    is_for_disabled=random.random() < 0.80,
+                    is_for_disabled=int(random.random() < 0.80),
                     num_of_lanes=num_of_lanes,
                     max_capacity=max_capacity,
-                    is_olympic=random.choice([True, False]),
+                    is_olympic=random.choice([1, 0]),
                     length=random.choice([25, 40, 50]),
                 )
 
