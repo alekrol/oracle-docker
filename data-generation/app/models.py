@@ -21,9 +21,9 @@ class Customer:
     last_name: str
     email: str
     phone: str
-    is_disabled: bool
+    is_disabled: int
     birth_date: date
-    is_active: bool
+    is_active: int
 
 @dataclass
 class SwimmingSchool:
@@ -72,10 +72,10 @@ class SwimmingPool:
     swimming_school_id: int
     max_depth: int # cm
     min_depth: int # cm
-    is_for_disabled: bool
+    is_for_disabled: int
     max_capacity: int
     length: int # m
-    is_olympic: bool
+    is_olympic: int
     num_of_lanes: int
 
     def field_values_to_list(self):
@@ -107,3 +107,6 @@ class SwimmingClass:
     instructor_id: int
     description: str
     class_type: str
+
+    def field_values_to_list(self):
+        return list(astuple(self))

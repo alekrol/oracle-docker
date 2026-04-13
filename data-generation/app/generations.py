@@ -98,13 +98,13 @@ def generate_customer_data(n: int = 300000) -> None:
             c.email,
             c.phone,
             c.is_disabled,
-            c.birth_date.isoformat(), 
+            c.birth_date.isoformat(),
             c.is_active,
         ]
-    
+
     customer_names = generate_names_and_surnames(n)
 
-    #print(customer_names[:30])
+    # print(customer_names[:30])
 
     with open(paths.swimming_schools, "r") as swimming_schools_file, open(
         paths.customers, "w", encoding="utf-8", newline=""
@@ -222,7 +222,9 @@ def generate_course_data() -> None:
         if not path.exists():
             raise Exception(f"{path.name} file not found!")
 
-    df_instructors = pd.read_csv(paths.instructors, usecols=["id", "swimming_school_id"])
+    df_instructors = pd.read_csv(
+        paths.instructors, usecols=["id", "swimming_school_id"]
+    )
     df_courses = pd.read_csv(paths.course_descriptions, usecols=["id", "description"])
     df_swimming_schools = pd.read_csv(
         paths.swimming_schools, usecols=["id", "built_date"]
@@ -351,9 +353,8 @@ def generate_course_payment_data() -> None:
         df_course_payments["valid_until"], errors="coerce"
     )
 
-    has_valid_multisport = (
-        df_course_payments["discount_percent"].notna()
-        & (df_course_payments["valid_until"] >= today)
+    has_valid_multisport = df_course_payments["discount_percent"].notna() & (
+        df_course_payments["valid_until"] >= today
     )
 
     can_use_multisport = (
@@ -382,7 +383,7 @@ def generate_course_payment_data() -> None:
     df_course_payments.to_csv(paths.course_payments, index=False, encoding="utf-8")
 
 
-def generate_swimming_pool_data(n: int =10)->None:
+def generate_swimming_pool_data(n: int = 10) -> None:
     """
     generate *n* pool instances per swimming school
     """
@@ -396,13 +397,13 @@ def generate_swimming_pool_data(n: int =10)->None:
         writer.writerow(header)
         saved_rows = 0
 
-        for i, school_id in enumerate(swimming_school_ids, start=1):
-            for j in range(n):
+        for _, school_id in enumerate(swimming_school_ids, start=1):
+            for _ in range(n):
                 num_of_lanes = random.choice([4, 6, 8, 10, 12, 15])
                 max_capacity = num_of_lanes * 6
 
                 swimming_pool = SwimmingPool(
-                    id=i+j,
+                    id=saved_rows + 1,
                     swimming_school_id=school_id,
                     max_depth=random.choice([160 + 10 * i for i in range(10)]),
                     min_depth=random.choice([100, 120, 140, 150]),
@@ -416,14 +417,51 @@ def generate_swimming_pool_data(n: int =10)->None:
                 writer.writerow(swimming_pool.field_values_to_list())
                 saved_rows += 1
 
-    print(f'written {saved_rows} swimming pool data rows') 
+    print(f"written {saved_rows} swimming pool data rows")
+
+def generate_swimming_class_data() -> None:
+    if not paths.courses.exists():
+        raise Exception("courses.csv file not found!")
+
+    df_courses = pd.read_csv(
+        paths.courses,
+        usecols=["id", "description", "swimming_school_id", "instructor_id", "num_of_classes"],
+    )
+
+    saved_classes = 0
+
+    with open(paths.swimming_classes, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        header = [f.name for f in fields(SwimmingClass)]
+        writer.writerow(header)
+
+        class_types = ["Group", "Individual", "Private", "Semi-private"]
+
+        for _, course in df_courses.iterrows():
+            for _ in range(course["num_of_classes"]):
+                class_type = random.choice(class_types)
+                description = f"{class_type} swimming class for {course['description']}"
+
+                swimming_class = SwimmingClass(
+                    course_id=int(course["id"]),
+                    swimming_school_id=int(course["swimming_school_id"]),
+                    instructor_id=int(course["instructor_id"]),
+                    description=description,
+                    class_type=class_type,
+                )
+
+                writer.writerow(swimming_class.field_values_to_list())
+                saved_classes += 1
+
+    print(f"swimming class data saved: {saved_classes}")
 
 
 if __name__ == "__main__":
-    generate_swimming_school_data()
-    generate_customer_data()
-    generate_instructor_data()
-    generate_multisport_data()
-    generate_course_data()
-    generate_course_payment_data()
-    generate_swimming_pool_data()
+    # generate_swimming_school_data()
+    # generate_customer_data()
+    # generate_instructor_data()
+    # generate_multisport_data()
+    # generate_course_data()
+    # generate_course_payment_data()
+    # generate_swimming_pool_data()
+    generate_swimming_class_data()
