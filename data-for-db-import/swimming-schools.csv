@@ -1,51 +1,51 @@
 id,name,city,capacity,description,built_date,last_renovation_date
-1,AquaWave Academy,Warszawa,308,A modern swimming school offering classes for all age groups. Certified instructors ensure safe and effective training. Ideal for beginners and advanced swimmers alike.,1998-04-09,2000-07-28
-2,Blue Dolphin Swim School,Kraków,891,This swimming school focuses on technique and endurance. Lessons are tailored to individual needs and progress levels. Friendly atmosphere encourages confidence in water.,2011-06-07,2013-12-27
-3,AquaPro Swim Center,Wrocław,553,Family-oriented swimming center with small group classes. Emphasis is placed on safety and fun learning. Perfect for children and adults starting their journey.,1992-12-06,2010-11-27
-4,HydroSkills Academy,Poznań,694,A professional swimming academy with experienced coaches. Programs include competitive training and recreational lessons. Facilities are clean and well-maintained.,1993-04-28,2019-03-16
-5,SwimMaster School,Gdańsk,205,This school offers flexible schedules for busy students. Classes are designed to improve skills step by step. Great environment for consistent progress.,2020-10-16,2021-02-02
-6,DeepBlue Swimming,Szczecin,361,Swimming lessons led by certified lifeguards and instructors. Focus on water safety and proper technique. Suitable for all skill levels.,1996-09-10,2021-12-09
-7,AquaFlow Institute,Łódź,171,A welcoming swimming school with modern pools. Instructors use engaging methods to teach efficiently. Students build confidence quickly.,1993-10-27,2004-12-14
-8,OceanFit Swim School,Lublin,476,This academy provides structured training programs. Emphasis on discipline and technique refinement. Ideal for those aiming to improve performance.,2015-01-13,2023-08-10
-9,WaveRiders Academy,Białystok,859,Beginner-friendly swimming school with patient instructors. Lessons are adapted to each student’s pace. Safe and supportive learning environment.,2017-03-13,2023-11-18
-10,Crystal Water School,Katowice,844,A high-quality swimming facility with experienced staff. Offers both group and private lessons. Focus on long-term skill development.,2017-09-28,2020-04-09
-11,AquaElite Swim,Gdynia,511,This school specializes in children’s swimming education. Fun activities are combined with essential skills. Builds strong foundations early.,2013-06-10,2021-12-21
-12,Neptune Swim Academy,Częstochowa,930,Professional instructors guide students through all levels. Focus on improving stamina and coordination. Great for regular training.,2009-11-10,2016-07-11
-13,WaterMotion School,Radom,362,A community-based swimming school with friendly staff. Lessons are interactive and engaging. Encourages social learning.,2016-05-26,2021-03-17
-14,BlueWave Training,Sosnowiec,111,Advanced training programs available for competitive swimmers. Coaches provide detailed feedback. Excellent for performance improvement.,2015-07-05,2022-06-21
-15,AquaPulse Academy,Toruń,831,This school offers personalized lesson plans. Each student receives individual attention. Ideal for fast progress.,2017-05-07,2018-06-17
-16,HydroActive Swim,Kielce,320,Modern swimming center with state-of-the-art facilities. Lessons are safe and well-organized. Suitable for families and individuals.,1999-04-28,2008-10-14
-17,WaveLine School,Rzeszów,210,A calm and supportive environment for learning to swim. Instructors focus on building trust in water. Great for nervous beginners.,2019-08-17,2020-01-30
-18,AquaSprint Center,Olsztyn,615,This academy combines fitness and swimming education. Programs improve both strength and technique. Suitable for all ages.,2000-10-04,2008-07-21
-19,BlueCurrent Swim,Bydgoszcz,52,Swimming school with flexible lesson options. Students can choose group or private sessions. Designed for convenience and effectiveness.,1993-05-14,2000-05-21
-20,SwimSphere Academy,Zielona Góra,755,A trusted school with many years of experience. Instructors are highly qualified. Strong focus on safety standards.,2008-04-29,2018-06-06
-21,AquaMotion School,Opole,348,This swimming center offers intensive training courses. Rapid improvement is encouraged through structured lessons. Great for motivated learners.,2016-08-21,2021-11-27
-22,OceanCore Swim,Elbląg,345,A relaxed environment with professional guidance. Lessons are adapted to skill level. Helps build confidence quickly.,1991-06-19,2001-11-05
-23,WaveForce Academy,Płock,769,School focused on both technique and enjoyment. Learning is made fun and effective. Suitable for children and adults.,2021-09-17,2023-04-19
-24,AquaZone School,Wałbrzych,753,A well-equipped swimming facility with modern pools. Instructors ensure high-quality training. Great for consistent improvement.,2010-05-14,2011-12-18
-25,HydroFit Academy,Tarnów,856,This academy emphasizes correct posture and movement. Lessons are detailed and progressive. Ideal for refining skills.,2000-06-21,2012-05-03
-26,BlueStream Swim,Chorzów,727,Family-friendly swimming school with experienced coaches. Classes are engaging and safe. Perfect for all ages.,2018-01-14,2024-08-25
-27,AquaVision School,Koszalin,167,This school provides structured beginner programs. Focus on basic techniques and water safety. Strong foundation for future learning.,1998-11-16,2017-12-11
-28,WaveSkill Academy,Kalisz,713,A professional team of instructors guides each student. Lessons are efficient and well-planned. Great for improving quickly.,2014-06-06,2016-12-12
-29,SwimLab Center,Legnica,896,Swimming school offering both recreational and competitive programs. Coaches adapt training to goals. Excellent learning environment.,1996-09-07,2008-08-07
-30,AquaPeak Training,Grudziądz,111,A welcoming place for learning to swim. Friendly instructors support each student. Builds confidence step by step.,1996-05-19,1999-08-01
-31,BlueLagoon Swim,Słupsk,659,This academy offers small class sizes for better attention. Lessons are interactive and focused. Ideal for faster progress.,1997-06-11,2011-03-29
-32,HydroWave Academy,Jaworzno,499,A modern facility with clean and safe pools. Instructors emphasize technique and safety. Suitable for all levels.,2023-08-06,2024-05-27
-33,AquaFlex School,Jelenia Góra,755,School focused on long-term swimming development. Students improve gradually and consistently. Great for regular practice.,1995-07-31,2016-08-08
-34,SwimCraft Academy,Nowy Sącz,462,This swimming center encourages active participation. Lessons are dynamic and engaging. Helps build strong swimming skills.,2003-08-23,2019-05-03
-35,OceanDrive Swim,Konin,602,A professional academy with experienced coaches. Programs include technique correction and endurance training. Ideal for serious learners.,2002-03-19,2024-08-29
-36,AquaEdge Training,Piotrków Trybunalski,132,Swimming school with flexible scheduling options. Classes are convenient and well-organized. Suitable for busy individuals.,2012-02-25,2021-12-20
-37,WavePro School,Inowrocław,960,This school provides a supportive learning atmosphere. Instructors are patient and attentive. Perfect for beginners.,2016-10-29,2017-04-10
-38,BlueOcean Academy,Ostrowiec Świętokrzyski,668,A well-established swimming academy with strong reputation. Focus on quality teaching. Students achieve steady progress.,2009-05-19,2016-08-10
-39,AquaCore Swim,Suwałki,143,This center offers both group and individual lessons. Training is adapted to personal needs. Effective and practical approach.,2001-03-26,2002-05-23
-40,HydroLine School,Gorzów Wielkopolski,833,A safe and friendly environment for swimming education. Lessons are clear and structured. Ideal for children and adults.,2000-04-08,2001-03-13
-41,SwimPoint Academy,London,325,Professional instructors help students improve quickly. Lessons focus on technique and coordination. Great for skill development.,2020-02-27,2024-10-05
-42,AquaRise Center,Paris,831,This academy combines fun and discipline in training. Students stay motivated and engaged. Suitable for all ages.,2015-11-07,2016-04-19
-43,WaveMaster School,Berlin,531,A modern swimming school with experienced staff. Lessons are efficient and safe. Encourages confidence in water.,2023-12-04,2024-03-02
-44,BlueDepth Swim,Madrid,988,This center provides personalized coaching. Each student receives tailored feedback. Ideal for rapid improvement.,2013-04-12,2023-03-13
-45,AquaTrack Academy,Rome,649,A friendly school with focus on water safety. Lessons are simple and effective. Great for beginners.,2002-06-24,2010-08-14
-46,HydroSphere School,Vienna,883,Swimming academy offering advanced training programs. Coaches help refine technique. Suitable for competitive swimmers.,2009-07-21,2023-10-16
-47,SwimQuest Academy,Prague,531,This school emphasizes comfort and safety in water. Lessons are calm and supportive. Perfect for nervous learners.,2012-01-22,2014-02-07
-48,AquaSpeed Center,Budapest,391,A well-equipped facility with professional instructors. Classes are structured and engaging. Encourages steady progress.,2005-08-10,2014-10-07
-49,WaveElite School,Amsterdam,157,This academy offers a variety of swimming programs. Students can choose based on goals. Flexible and effective learning.,2004-05-27,2019-06-07
-50,BlueWater Academy,Brussels,471,A welcoming environment with skilled instructors. Lessons are interactive and enjoyable. Great for building confidence.,1997-03-19,2012-01-03
+1,AquaWave Academy,Warszawa,75,A modern swimming school offering classes for all age groups. Certified instructors ensure safe and effective training. Ideal for beginners and advanced swimmers alike.,2018-09-07,2019-12-07
+2,Blue Dolphin Swim School,Kraków,300,This swimming school focuses on technique and endurance. Lessons are tailored to individual needs and progress levels. Friendly atmosphere encourages confidence in water.,2023-04-07,2024-01-13
+3,AquaPro Swim Center,Wrocław,804,Family-oriented swimming center with small group classes. Emphasis is placed on safety and fun learning. Perfect for children and adults starting their journey.,2000-01-06,2006-04-10
+4,HydroSkills Academy,Poznań,808,A professional swimming academy with experienced coaches. Programs include competitive training and recreational lessons. Facilities are clean and well-maintained.,1994-08-07,2024-12-14
+5,SwimMaster School,Gdańsk,654,This school offers flexible schedules for busy students. Classes are designed to improve skills step by step. Great environment for consistent progress.,2014-06-19,2015-06-10
+6,DeepBlue Swimming,Szczecin,80,Swimming lessons led by certified lifeguards and instructors. Focus on water safety and proper technique. Suitable for all skill levels.,2008-12-04,2009-08-21
+7,AquaFlow Institute,Łódź,288,A welcoming swimming school with modern pools. Instructors use engaging methods to teach efficiently. Students build confidence quickly.,1994-03-16,2004-01-05
+8,OceanFit Swim School,Lublin,624,This academy provides structured training programs. Emphasis on discipline and technique refinement. Ideal for those aiming to improve performance.,2012-09-01,2013-04-06
+9,WaveRiders Academy,Białystok,479,Beginner-friendly swimming school with patient instructors. Lessons are adapted to each student’s pace. Safe and supportive learning environment.,1998-12-02,2023-05-13
+10,Crystal Water School,Katowice,653,A high-quality swimming facility with experienced staff. Offers both group and private lessons. Focus on long-term skill development.,1999-11-21,2020-01-14
+11,AquaElite Swim,Gdynia,827,This school specializes in children’s swimming education. Fun activities are combined with essential skills. Builds strong foundations early.,2002-06-24,2002-10-08
+12,Neptune Swim Academy,Częstochowa,398,Professional instructors guide students through all levels. Focus on improving stamina and coordination. Great for regular training.,1997-02-28,2016-02-13
+13,WaterMotion School,Radom,270,A community-based swimming school with friendly staff. Lessons are interactive and engaging. Encourages social learning.,2002-06-19,2009-06-09
+14,BlueWave Training,Sosnowiec,144,Advanced training programs available for competitive swimmers. Coaches provide detailed feedback. Excellent for performance improvement.,2005-02-05,2007-05-23
+15,AquaPulse Academy,Toruń,417,This school offers personalized lesson plans. Each student receives individual attention. Ideal for fast progress.,2007-01-16,2009-03-18
+16,HydroActive Swim,Kielce,320,Modern swimming center with state-of-the-art facilities. Lessons are safe and well-organized. Suitable for families and individuals.,2005-06-06,2018-12-20
+17,WaveLine School,Rzeszów,520,A calm and supportive environment for learning to swim. Instructors focus on building trust in water. Great for nervous beginners.,1991-12-13,2024-09-05
+18,AquaSprint Center,Olsztyn,994,This academy combines fitness and swimming education. Programs improve both strength and technique. Suitable for all ages.,2014-01-20,2015-06-15
+19,BlueCurrent Swim,Bydgoszcz,615,Swimming school with flexible lesson options. Students can choose group or private sessions. Designed for convenience and effectiveness.,2006-12-24,2008-09-29
+20,SwimSphere Academy,Zielona Góra,693,A trusted school with many years of experience. Instructors are highly qualified. Strong focus on safety standards.,2003-02-25,2021-10-02
+21,AquaMotion School,Opole,641,This swimming center offers intensive training courses. Rapid improvement is encouraged through structured lessons. Great for motivated learners.,2017-09-29,2021-10-19
+22,OceanCore Swim,Elbląg,96,A relaxed environment with professional guidance. Lessons are adapted to skill level. Helps build confidence quickly.,1998-08-17,2001-09-29
+23,WaveForce Academy,Płock,841,School focused on both technique and enjoyment. Learning is made fun and effective. Suitable for children and adults.,2019-08-31,2020-12-09
+24,AquaZone School,Wałbrzych,925,A well-equipped swimming facility with modern pools. Instructors ensure high-quality training. Great for consistent improvement.,2002-12-25,2004-10-08
+25,HydroFit Academy,Tarnów,439,This academy emphasizes correct posture and movement. Lessons are detailed and progressive. Ideal for refining skills.,2000-06-11,2004-12-21
+26,BlueStream Swim,Chorzów,700,Family-friendly swimming school with experienced coaches. Classes are engaging and safe. Perfect for all ages.,2002-06-21,2022-10-22
+27,AquaVision School,Koszalin,429,This school provides structured beginner programs. Focus on basic techniques and water safety. Strong foundation for future learning.,2006-05-14,2010-01-05
+28,WaveSkill Academy,Kalisz,736,A professional team of instructors guides each student. Lessons are efficient and well-planned. Great for improving quickly.,2005-12-08,2010-08-20
+29,SwimLab Center,Legnica,673,Swimming school offering both recreational and competitive programs. Coaches adapt training to goals. Excellent learning environment.,2001-12-23,2005-03-06
+30,AquaPeak Training,Grudziądz,596,A welcoming place for learning to swim. Friendly instructors support each student. Builds confidence step by step.,2018-06-26,2020-05-26
+31,BlueLagoon Swim,Słupsk,217,This academy offers small class sizes for better attention. Lessons are interactive and focused. Ideal for faster progress.,2022-09-16,2023-05-24
+32,HydroWave Academy,Jaworzno,326,A modern facility with clean and safe pools. Instructors emphasize technique and safety. Suitable for all levels.,2010-09-26,2019-03-31
+33,AquaFlex School,Jelenia Góra,274,School focused on long-term swimming development. Students improve gradually and consistently. Great for regular practice.,2018-09-16,2024-12-14
+34,SwimCraft Academy,Nowy Sącz,913,This swimming center encourages active participation. Lessons are dynamic and engaging. Helps build strong swimming skills.,2020-09-16,2022-07-12
+35,OceanDrive Swim,Konin,891,A professional academy with experienced coaches. Programs include technique correction and endurance training. Ideal for serious learners.,1992-07-05,2002-10-13
+36,AquaEdge Training,Piotrków Trybunalski,460,Swimming school with flexible scheduling options. Classes are convenient and well-organized. Suitable for busy individuals.,1991-06-10,2005-08-03
+37,WavePro School,Inowrocław,266,This school provides a supportive learning atmosphere. Instructors are patient and attentive. Perfect for beginners.,2002-01-04,2004-12-23
+38,BlueOcean Academy,Ostrowiec Świętokrzyski,372,A well-established swimming academy with strong reputation. Focus on quality teaching. Students achieve steady progress.,2015-06-11,2023-06-29
+39,AquaCore Swim,Suwałki,455,This center offers both group and individual lessons. Training is adapted to personal needs. Effective and practical approach.,1999-07-16,2021-12-06
+40,HydroLine School,Gorzów Wielkopolski,196,A safe and friendly environment for swimming education. Lessons are clear and structured. Ideal for children and adults.,2018-11-02,2023-12-25
+41,SwimPoint Academy,London,302,Professional instructors help students improve quickly. Lessons focus on technique and coordination. Great for skill development.,2001-11-18,2008-02-22
+42,AquaRise Center,Paris,601,This academy combines fun and discipline in training. Students stay motivated and engaged. Suitable for all ages.,2023-06-02,2024-12-27
+43,WaveMaster School,Berlin,969,A modern swimming school with experienced staff. Lessons are efficient and safe. Encourages confidence in water.,2001-10-14,2021-01-01
+44,BlueDepth Swim,Madrid,420,This center provides personalized coaching. Each student receives tailored feedback. Ideal for rapid improvement.,2016-03-05,2020-08-26
+45,AquaTrack Academy,Rome,571,A friendly school with focus on water safety. Lessons are simple and effective. Great for beginners.,1999-11-03,2006-01-16
+46,HydroSphere School,Vienna,823,Swimming academy offering advanced training programs. Coaches help refine technique. Suitable for competitive swimmers.,2012-02-20,2014-03-05
+47,SwimQuest Academy,Prague,206,This school emphasizes comfort and safety in water. Lessons are calm and supportive. Perfect for nervous learners.,1992-02-11,1997-01-11
+48,AquaSpeed Center,Budapest,861,A well-equipped facility with professional instructors. Classes are structured and engaging. Encourages steady progress.,2018-02-23,2019-12-10
+49,WaveElite School,Amsterdam,660,This academy offers a variety of swimming programs. Students can choose based on goals. Flexible and effective learning.,2020-07-11,2022-11-22
+50,BlueWater Academy,Brussels,440,A welcoming environment with skilled instructors. Lessons are interactive and enjoyable. Great for building confidence.,1992-11-06,2010-02-09
