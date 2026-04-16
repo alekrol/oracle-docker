@@ -1,4 +1,6 @@
-# To generate all the data at once use
+# FILES READY FOR DB IMPORT ARE IN DIR *data-for-db-import*!
+
+# or to generate all the data at once use
 # python -m app.generations
 
 # To generate only one type of data (e.g. swimming pools)
